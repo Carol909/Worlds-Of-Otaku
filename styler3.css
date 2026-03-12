@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Alte Haas Grotesk";
+    background-color: #EBEDE9;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #10141F;
+}
+
+@font-face {
+    font-family: "Alte Haas Grotesk";
+    src: url(font/AlteHaasGroteskRegular.ttf);
+}
+
+@font-face {
+    font-family: "Boldfinger";
+    src: url(font/Boldfinger.ttf)
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(font/Nexa-Heavy.ttf);
+}
+
+@font-face {
+    font-family: "Valorant";
+    src: url(font/Valorant.ttf);
+}
+
+.blue{
+    background-color: #458CF4;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 70%;
+    z-index: 2;
+}
+
+.wallpaper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 30px 20px;
+    border-radius: 30px;
+    background-color: #090A14;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px #090A14;
+    z-index: 3;
+}
+
+.text1{
+    font-family: "Noto Sans JP", sans-serif;
+    color: #EBEDE9;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+    letter-spacing: 5px;
+}
+
+.text2{
+    font-family: "Noto Sans JP", sans-serif;
+    color: #EBEDE9;
+    font-size: 15px;
+    text-align: center;
+    margin: 3px;
+    letter-spacing: 5px;
+}
+
+.position-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+label{
+    color: #EBEDE9;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input{
+    width: 385px;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 9px;
+    font-family: "Alte Haas Grotesk";
+    font-size: 15px;
+    background-color: #EBEDE9;
+    border: none;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: #EBEDE9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+h2 a{
+    color: #458CF4;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+::placeholder{
+    color: #090A14;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 230px;
+    height: 56px;
+    margin: 15px;
+    border-radius: 50px;
+    color: #EBEDE9;
+    background-color: #458CF4;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover, button:active, button:focus{
+    background-color: #3C5E8B;
+    color: #090A14;
+    transition: 0.5s ease;
+}
+
+.user-login-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 30px 0;
+}
+
+.user-login-style a{
+    color: #458CF4;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.user-login-style a:hover{
+    color: #3C5E8B;
+    transition: 0.2s ease;
+}
+
+.Login:hover{
+    color: #3C5E8B;
+    transition: 0.2s ease;
+}

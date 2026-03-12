@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitsune Haven | Todas as Obras</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="imagex/png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styler2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">Kitsune Haven</a>
+                <span class="subtitle">キツネヘブン</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="All_mangas.html" class="active">Obras</a></li>
+                <li><a href="About us.html">Sobre Nós</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Pesquisar...">
+                <button type="submit" class="search-button" id="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#458cf4;">
+                        <g fill="#458cf4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(10.66667,10.66667)">
+                                <path d="M10,2c-4.40347,0 -8,3.59653 -8,8c0,4.40347 3.59653,8 8,8c1.75213,0 3.37052,-0.57793 4.69141,-1.54102l5.1543,5.1543c0.31352,0.32654 0.77908,0.45808 1.21713,0.34388c0.43805,-0.1142 0.78014,-0.45628 0.89433,-0.89433c0.1142,-0.43805 -0.01734,-0.90361 -0.34388,-1.21713l-5.1543,-5.1543c0.96309,-1.32088 1.54102,-2.93928 1.54102,-4.69141c0,-4.40347 -3.59653,-8 -8,-8zM10,4.5c3.05237,0 5.5,2.44763 5.5,5.5c0,3.05237 -2.44763,5.5 -5.5,5.5c-3.05237,0 -5.5,-2.44763 -5.5,-5.5c0,-3.05237 2.44763,-5.5 5.5,-5.5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            <h1>|</h1>
+            <div class="nav_sign_in">
+                <a href="Login.html">Entrar</a>
+            </div>
+            <div class="nav_sign_up">
+                <a href="Register.html">Cadastra-se</a>
+            </div>
+        </div>
+    </nav>
+    <div class="filter-position">
+        <div class="filter-section">
+            <div class="genre">
+                <h4 class="title-genre">Gêneros</h4>
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-acao" value="Ação">
+                    <label for="cb-acao">Ação</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-aventura" value="Aventura">
+                    <label for="cb-aventura">Aventura</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-bl" value="BL">
+                    <label for="cb-bl">BL</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-comedia" value="Comédia">
+                    <label for="cb-comedia">Comédia</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-drama" value="Drama">
+                    <label for="cb-drama">Drama</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-fantasia" value="Fantasia">
+                    <label for="cb-fantasia">Fantasia</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-fantasia-sombria" value="Fantasia-Sombria">
+                    <label for="cb-fantasia-sombria">Fantasia-Sombria</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-ficcao-cientifica" value="Ficção-científica">
+                    <label for="cb-ficcao-cientifica">Ficção científica</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-gl" value="GL">
+                    <label for="cb-gl">GL</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-gore" value="Gore">
+                    <label for="cb-gore">Gore</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-harem" value="Harém">
+                    <label for="cb-harem">Harém</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-hare-reverso" value="Harém-reverso">
+                    <label for="cb-hare-reverso">Harém reverso</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-horror" value="Horror">
+                    <label for="cb-horror">Horror</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-isekai" value="Isekai">
+                    <label for="cb-isekai">Isekai</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-josei" value="Josei">
+                    <label for="cb-josei">Josei</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-misterio" value="Mistério">
+                    <label for="cb-misterio">Mistério</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-psicologico" value="Psicológico">
+                    <label for="cb-psicologico">Psicológico</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-romance" value="Romance">
+                    <label for="cb-romance">Romance</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-school-life" value="School-life">
+                    <label for="cb-school-life">School Life</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-seinen" value="Seinen">
+                    <label for="cb-seinen">Seinen</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-shoujo" value="Shoujo">
+                    <label for="cb-shoujo">Shoujo</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-shounen" value="Shounen">
+                    <label for="cb-shounen">Shounen</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-shounen-ai" value="Shounen-ai">
+                    <label for="cb-shounen-ai">Shounen-ai</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-slice-of-life" value="Slice-of-life">
+                    <label for="cb-slice-of-life">Slice of Life</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-sobrenatural" value="Sobrenatural">
+                    <label for="cb-sobrenatural">Sobrenatural</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-tragedia" value="Tragédia">
+                    <label for="cb-tragedia">Tragédia</label>
+                    <input type="checkbox" class="filter-genre" name="cb" id="cb-yuri" value="Yuri">
+                    <label for="cb-yuri">Yuri</label>
+                </div>
+            </div>
+        </div>
+        <div class="filter-section">
+            <div class="tag">
+                <h4 id="tag" class="title-genre">Tags Extras<span class="toggle-icon"><img src="svg/caret-down-svgrepo-com.svg"></span></h4>
+                <div class="checkbox-wrapper-47">
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-light-novels" value="Light-Novels">
+                    <label for="cb-light-novels">Light Novel</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-manga" value="Mangá">
+                    <label for="cb-manga">Mangá</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-manhua" value="Manhua">
+                    <label for="cb-manhua">Manhua</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-manhwa" value="Manhwa">
+                    <label for="cb-manhwa">Manhwa</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-colorido" value="Colorido">
+                    <label for="cb-colorido">Colorido</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-webtoons" value="Webtoons">
+                    <label for="cb-webtoons">Webtoons</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-baseado" value="Baseado-em-uma-web-Novel">
+                    <label for="cb-baseado">Baseado em uma...</label>
+                    <input type="checkbox" class="filter-tag" name="cb" id="cb-adaptado" value="Adaptado-para-Anime">
+                    <label for="cb-adaptado">Adaptado para...</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="conteudo">
+        <div class="all__comics__wrapper">
+            <h2 class="conteudo_titulo">Todas as Obras</h2>
+            <section class="all__comics" id="manga-list">
+                <div class="comic manhua bl comédia drama romance school-life shounen-ai slice-of-life adaptado-para-anime colorido">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/19 Days/Obra.html">
+                        <img src="img/mangas/19-Days.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">19 Days</h2>
+                </div> <!--19 Days-->
+                <div class="comic mangá ação drama ficção-científica mistério psicológico seinen">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/20th Century Boys/Obra.html">
+                        <img src="img/mangas/20th-Century-Boys.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">20th Century Boys</h2>
+                </div> <!--20th Century Boys-->
+                <div class="comic manhwa comédia drama romance baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/A Business Proposal/Obra.html">
+                        <img src="img/mangas/A-Business-Proposal.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">A Business Proposal</h2>
+                </div> <!--A Business Proposal-->
+                <div class="comic manhwa drama romance school-life shoujo slice-of-life colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/After School Lessons for Unripe Apples/Obra.html">
+                        <img src="img/mangas/After-School-Lessons for-Unripe-Apples.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">After School Lessons for Unripe Apples</h2>
+                </div><!--After School Lessons for Unripe Apples-->
+                <div class="comic mangá ação ficção-científica horror psicológico seinen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Ajin Demi-Human/Obra.html">
+                        <img src="img/mangas/Ajin-Demi-Human.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Ajin: Demi-Human</h2>
+                </div> <!--Ajin Demi-Human-->
+                <div class="comic mangá ação drama fantasia-sombria Shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Akame ga Kill!/Obra.html">
+                        <img src="img/mangas/Akame-ga-Kill!.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Akame ga Kill!</h2>
+                </div> <!--Akame ga Kill!-->
+                <div class="comic mangá ação aventura drama mistério psicológico shoujo tragédia adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Banana Fish/Obra.html">
+                        <img src="img/mangas/Banana-Fish.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Banana Fish</h2>
+                </div><!--Banana Fish-->
+                <div class="comic mangá ação aventura drama fantasia-sombria gore horror seinen sobrenatural tragédia adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Berserk/Obra.html">
+                        <img src="img/mangas/Berserk.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Berserk</h2>
+                </div> <!--Berserk-->
+                <div class="comic manhwa comédia drama fantasia iseka romance shoujo baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Beware of the Villainess!/Obra.html">
+                        <img src="img/mangas/Beware-of-the-Villainess!.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Beware of the Villainess!</h2>
+                </div> <!--Beware of the Villainess!-->
+                <div class="comic mangá ação aventura comédia drama fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Black Clover/Obra.html">
+                        <img src="img/mangas/Black-Clover.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Black Clover</h2>
+                </div> <!--Black Clover-->
+                <div class="comic mangá ação aventura comédia drama shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Bleach/Obra.html">
+                        <img src="img/mangas/Bleach.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Bleach</h2>
+                </div> <!--Bleach-->
+                <div class="comic mangá ação comédia drama fantasia ficção-científica school-life shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Boku no Hero Academia/Obra.html">
+                        <img src="img/mangas/Boku-no-Hero-Academia.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Boku no Hero Academia</h2>
+                </div> <!--Boku no Hero Academia-->
+                <div class="comic mangá ação fantasia-sombria horror shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Chainsaw Man/Obra.html">
+                        <img src="img/mangas/Chainsaw-Man.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Chainsaw Man</h2>
+                </div> <!--Chainsaw Man-->
+                <div class="comic mangá ação drama gore horror seinen sobrenatural">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Choujin X/Obra.html">
+                        <img src="img/mangas/Choujin-X.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Choujin X</h2>
+                </div> <!--Choujin X-->
+                <div class="comic mangá ação fantasia-sombria mistério shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Claymore/Obra.html">
+                        <img src="img/mangas/Claymore.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Claymore</h2>
+                </div> <!--Claymore-->
+                <div class="comic mangá ação shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Dandadan/Obra.html">
+                        <img src="img/mangas/Dandadan.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dandadan</h2>
+                </div> <!--Dandadan-->
+                <div class="comic manhwa drama romance shoujo baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Daytime Star/Obra.html">
+                        <img src="img/mangas/Daytime-Star.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Daytime Star</h2>
+                </div> <!--Daytime Star-->
+                <div class="comic mangá ação ficção-científica psicológico shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Deadman Wonderland/Obra.html">
+                        <img src="img/mangas/Deadman-Wonderland.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Deadman Wonderland</h2>
+                </div> <!--Deadman Wonderland-->
+                <div class="comic mangá drama mistério psicológico shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Death Note/Obra.html">
+                        <img src="img/mangas/Death-Note.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Death Note</h2>
+                </div> <!--Death Note-->
+                <div class="comic mangá ação aventura drama horror school-life shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Devilman/Obra.html">
+                        <img src="img/mangas/Devilman.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Devilman</h2>
+                </div> <!--Devilman-->
+                <div class="comic manhwa ação drama mistério ficção-científica colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Director Kim/Obra.html">
+                        <img src="img/mangas/Director-Kim.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Director Kim</h2>
+                </div> <!--Director Kim-->
+                <div class="comic mangá ação fantasia-sombria gore horror mistério psicológico seinen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Dorohedoro/Obra.html">
+                        <img src="img/mangas/Dorohedoro.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dorohedoro</h2>
+                </div> <!--Dorohedoro-->
+                <div class="comic mangá ação aventura comédia ficção-científica shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Dr. Stone/Obra.html">
+                        <img src="img/mangas/Dr.-Stone.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dr. Stone</h2>
+                </div> <!--Dr. Stone-->
+                <div class="comic manhwa drama josei psicológico romance school-life shoujo sobrenatural colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Dreaming Freedom/Obra.html">
+                        <img src="img/mangas/Dreaming-Freedom.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dreaming Freedom</h2>
+                </div> <!--Dreaming Freedom-->
+                <div class="comic manhwa ação comédia shounen sobrenatural colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Eleceed/Obra.html">
+                        <img src="img/mangas/Eleceed.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Eleceed</h2>
+                </div> <!--Eleceed-->
+                <div class="comic mangá ação drama ficção-científica gore horror romance psicológico seinen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Elfen Lied/Obra.html">
+                        <img src="img/mangas/Elfen-Lied.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Elfen Lied</h2>
+                </div> <!--Elfen Lied-->
+                <div class="comic mangá ação aventura comédia drama fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Fairy Tail/Obra.html">
+                        <img src="img/mangas/Fairy-Tail.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Fairy Tail</h2>
+                </div> <!--Fairy Tail-->
+                <div class="comic mangá ação drama ficção-científica gore shounen sobrenatural">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Fire Punch/Obra.html">
+                        <img src="img/mangas/Fire-Punch.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Fire Punch</h2>
+                </div> <!--Fire Punch-->
+                <div class="comic mangá ação aventura drama fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Fullmetal Alchemist/Obra.html">
+                        <img src="img/mangas/Fullmetal-Alchemist.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Fullmetal Alchemist </h2>
+                </div> <!--Fullmetal Alchemist -->
+                <div class="comic mangá ação comedia drama mistério psicológico seinen sobrenatural adaptado-para-anime hiato">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Gangsta/Obra.html">
+                        <img src="img/mangas/Gangsta.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gangsta.</h2>
+                </div> <!--Gangsta.-->
+                <div class="comic mangá ação drama ficção-científica horror seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Gantz/Obra.html">
+                        <img src="img/mangas/Gantz.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gantz</h2>
+                </div> <!--Gantz-->
+                <div class="comic mangá ação aventura comédia drama ficção-científica shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Gintama/Obra.html">
+                        <img src="img/mangas/Gintama.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gintama</h2>
+                </div> <!--Gintama-->
+                <div class="comic mangá ação comédia slice-of-Life seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Gokushufudou/Obra.html">
+                        <img src="img/mangas/Gokushufudou.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gokushufudou</h2>
+                </div> <!--Gokushufudou-->
+                <div class="comic manhwa ação drama romance school-life shounen slice-of-life colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Guard Pass/Obra.html">
+                        <img src="img/mangas/Guard-Pass.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Guard Pass</h2>
+                </div> <!--Guard Pass-->
+                <div class="comic mangá comédia drama shounen slice-of-life adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Haikyuu!!/Obra.html">
+                        <img src="img/mangas/Haikyuu!!.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Haikyuu!!</h2>
+                </div> <!--Haikyuu!!-->
+                <div class="comic light-novels ação bl comédia drama romance shounen-ai sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Light Novel</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Heaven Official_s Blessing (novel)/Obra.html">
+                        <img src="img/mangas/Heaven-Official_s-Blessing-_novel_.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Heaven Official's Blessing</h2>
+                </div> <!--Heaven Official's Blessing (novel)-->
+                <div class="comic manhua ação bl comédia drama romance shounen-ai sobrenatural adaptado-para-anime baseado-em-uma-web-novel colorido hiato webtoons">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Heaven Official_s Blessing/Obra.html">
+                        <img src="img/mangas/Heaven-Official_s-Blessing.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Heaven Official's Blessing</h2>
+                </div> <!--Heaven Official's Blessing-->
+                <div class="comic mangá ação comédia gore horror seinen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Hellsing/Obra.html">
+                        <img src="img/mangas/Hellsing.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Hellsing</h2>
+                </div> <!--Hellsing-->
+                <div class="comic manhwa ação aventura drama fantasia shounen colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Hero Killer/Obra.html">
+                        <img src="img/mangas/Hero-Killer.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Hero Killer</h2>
+                </div> <!--Hero Killer-->
+                <div class="comic manhwa ação comédia drama romance adaptado-para-anime colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/How to Fight/Obra.html">
+                        <img src="img/mangas/How-to-Fight.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">How to Fight</h2>
+                </div> <!--How to Fight-->
+                <div class="comic mangá ação aventura drama fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Hunter x Hunter/Obra.html">
+                        <img src="img/mangas/Hunter-x-Hunter.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Hunter x Hunter</h2>
+                </div> <!--Hunter x Hunter-->
+                <div class="comic manhwa ação drama fantasia sobrenatural baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Hwiyeong Geomjeon/Obra.html">
+                        <img src="img/mangas/Hwiyeong-Geomjeon.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Hwiyeong Geomjeon</h2>
+                </div> <!--Hwiyeong Geomjeon-->
+                <div class="comic manhwa comédia drama fantasia shoujo romance baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/I Became the Male Lead’s Adopted Daughter/Obra.html">
+                        <img src="img/mangas/I-Became-the-Male-Lead’s-Adopted-Daughter.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">I Became the Male Lead’s Adopted Daughter</h2>
+                </div> <!--I Became the Male Lead’s Adopted Daughter-->
+                <div class="comic mangá comédia romance school-life shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Ijiranaide, Nagatoro-san/Obra.html">
+                        <img src="img/mangas/Ijiranaide,-Nagatoro-san.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Ijiranaide, Nagatoro-san</h2>
+                </div> <!--Ijiranaide, Nagatoro-san-->
+                <div class="comic mangá ação aventura romance shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/InuYasha/Obra.html">
+                        <img src="img/mangas/InuYasha.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">InuYasha</h2>
+                </div> <!--InuYasha-->
+                <div class="comic mangá ação gore horror mistério psicológico seinen sobrenatural tragédia">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Jagaaaaaan/Obra.html">
+                        <img src="img/mangas/Jagaaaaaan.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Jagaaaaaan</h2>
+                </div> <!--Jagaaaaaan-->
+                <div class="comic mangá comédia drama fantasia mistério school-life shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Jibaku Shounen Hanako-kun/Obra.html">
+                        <img src="img/mangas/Jibaku-Shounen-Hanako-kun.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Jibaku Shounen Hanako-kun</h2>
+                </div> <!--Jibaku Shounen Hanako-kun-->
+                <div class="comic mangá ação aventura fantasia horror Shounen Sobrenatural tragédia adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 1/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-1.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 1: Phantom Blood</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 1-->
+                <div class="comic mangá ação aventura comédia drama fantasia mistério shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 2/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-2.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 2: Battle Tendency</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 2-->
+                <div class="comic mangá ação aventura drama fantasia shounen sobrenatural horror adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 3/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-3.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 3: Stardust Crusaders</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 3-->
+                <div class="comic mangá ação aventura comédia drama fantasia mistério slice-of-life shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 4/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-4.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 4: Diamond is Unbreakable</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 4-->
+                <div class="comic mangá ação aventura drama fantasia mistério shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 5/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-5.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 5: Golden Wind</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 5-->
+                <div class="comic mangá ação aventura drama fantasia mistério shounen sobrenatural tragédia adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 6/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-6.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 6: Stone Ocean</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 6-->
+                <div class="comic mangá ação aventura drama fantasia horror mistério seinen sobrenatural">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 7/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-7.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 7: Steel Ball Run</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 7-->
+                <div class="comic mangá ação aventura drama fantasia mistério romance Seinen sobrenatural">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 8/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-8.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 8: Jojolion</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 8-->
+                <div class="comic mangá ação aventura drama fantasia Seinen sobrenatural">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 9/Obra.html">
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-9.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">JoJo’s Bizarre Adventure Part 9</h2>
+                </div> <!--JoJo’s Bizarre Adventure Part 9-->
+                <div class="comic mangá ação aventura fantasia-sombria horror shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Jujutsu Kaisen/Obra.html">
+                        <img src="img/mangas/Jujutsu-Kaisen.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Jujutsu Kaisen</h2>
+                </div> <!--Jujutsu Kaisen-->
+                <div class="comic manhwa drama fantasia romance shoujo sobrenatural baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Just Leave Me Be/Obra.html">
+                        <img src="img/mangas/Just-Leave-Me-Be.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Just Leave Me Be</h2>
+                </div> <!--Just Leave Me Be-->
+                <div class="comic mangá ação ficção-científica horror Shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Kaijuu 8-gou/Obra.html">
+                        <img src="img/mangas/Kaijuu-8-gou.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Kaiju No. 8</h2>
+                </div> <!--Kaijuu 8-gou-->
+                <div class="comic manhwa drama fantasia isekai romance shoujo baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Kill the Villainess/Obra.html">
+                        <img src="img/mangas/Kill-the-Villainess.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Kill the Villainess</h2>
+                </div> <!--Kill the Villainess-->
+                <div class="comic manhwa ação aventura fantasia drama shounen colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Killer Cop/Obra.html">
+                        <img src="img/mangas/Killer-Cop.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Killer Cop</h2>
+                </div> <!--Killer Cop-->
+                <div class="comic manhwa ação aventura fantasia mistério colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Killer Peter/Obra.html">
+                        <img src="img/mangas/Killer-Peter.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Killer Peter</h2>
+                </div> <!--Killer Peter-->
+                <div class="comic mangá ação aventura comédia drama fantasia-sombria shounen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Kimetsu no Yaiba/Obra.html">
+                        <img src="img/mangas/Kimetsu-no-Yaiba.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Kimetsu no Yaiba</h2>
+                </div> <!--Kimetsu no Yaiba-->
+                <div class="comic mangá comédia romance shounen school-life adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Komi-san wa, Comyushou desu/Obra.html">
+                        <img src="img/mangas/Komi-san-wa_-Comyushou-desu.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Komi-san wa, Comyushou desu</h2>
+                </div> <!--Komi-san wa, Comyushou desu-->
+                <div class="comic mangá ação comédia drama mistério shounen sobrenatural adaptado-para-anime hiato">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Kuroshitsuji/Obra.html">
+                        <img src="img/mangas/Kuroshitsuji.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Kuroshitsuji</h2>
+                </div> <!--Kuroshitsuji-->
+                <div class="comic manhwa ação comédia drama school-life sobrenatural adaptado-para-anime colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Lookism/Obra.html">
+                        <img src="img/mangas/Lookism.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Lookism</h2>
+                </div> <!--Lookism-->
+                <div class="comic manhwa fantasia romance shounen slice-of-life sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Mahoutsukai no Yome/Obra.html">
+                        <img src="img/mangas/Mahoutsukai-no-Yome.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Mahoutsukai no Yome</h2>
+                </div> <!--Mahoutsukai no Yome-->
+                <div class="comic manhwa drama fantasia romance josei shoujo baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Marriage of Convenience/Obra.html">
+                        <img src="img/mangas/Marriage-of-Convenience.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Marriage of Convenience</h2>
+                </div> <!--Marriage of Convenience-->
+                <div class="comic mangá ação comédia fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Mashle Magic and Muscles/Obra.html">
+                        <img src="img/mangas/Mashle-Magic-and-Muscles.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Mashle Magic and Muscles</h2>
+                </div> <!--Mashle Magic and Muscles-->
+                <div class="comic mangá ação comédia drama psicológico school-life adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Mob Psycho 100/Obra.html">
+                        <img src="img/mangas/Mob-Psycho-100.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Mob Psycho 100</h2>
+                </div> <!--Mob Psycho 100-->
+                <div class="comic mangá drama mistério psicológico seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Monster/Obra.html">
+                        <img src="img/mangas/Monster.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Monster</h2>
+                </div> <!--Monster-->
+                <div class="comic manhwa fantasia isekai romance shoujo baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/My Husband Hides His Beauty/Obra.html">
+                        <img src="img/mangas/My-Husband-Hides-His-Beauty.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">My Husband Hides His Beauty</h2>
+                </div> <!--My Husband Hides His Beauty-->
+                <div class="comic manhua comédia school-life shounen slice-of-life colorido webtoons">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Nan Hao Shang Feng/Obra.html">
+                        <img src="img/mangas/Nan-Hao-Shang-Feng.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Nan Hao Shang Feng</h2>
+                </div> <!--Nan Hao Shang Feng-->
+                <div class="comic mangá comédia drama josei romance adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Nana/Obra.html">
+                        <img src="img/mangas/Nana.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Nana</h2>
+                </div> <!--Nana-->
+                <div class="comic mangá ação comédia drama fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Naruto/Obra.html">
+                        <img src="img/mangas/Naruto.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Naruto</h2>
+                </div> <!--Naruto-->
+                <div class="comic mangá ação aventura comédia drama mistério psicológico romance slice-of-life sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Noragami/Obra.html">
+                        <img src="img/mangas/Noragami.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Noragami</h2>
+                </div> <!--Noragami-->
+                <div class="comic light-novels ação aventura drama fantasia isekai psicológico sobrenatural shounen tragédia adaptado-para-anime">
+                    <div class="comic__type">Light Novel</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Omniscient Reader (novel)/Obra.html">
+                        <img src="img/mangas/Omniscient-Reader_novel_.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Omniscient Reader</h2>
+                </div> <!--Omniscient Reader (novel)-->
+                <div class="comic manhwa ação aventura drama fantasia isekai psicológico sobrenatural shounen tragédia adaptado-para-anime baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Omniscient Reader/Obra.html">
+                        <img src="img/mangas/Omniscient-Reader.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Omniscient Reader</h2>
+                </div> <!--Omniscient Reader-->
+                <div class="comic mangá ação aventura comédia fantasia shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/One Piece/Obra.html">
+                        <img src="img/mangas/One-Piece.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">One Piece</h2>
+                </div> <!--One Piece-->
+                <div class="comic mangá ação comédia ficção-científica seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/One Punch Man/Obra.html">
+                        <img src="img/mangas/One-Punch-Man.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">One Punch Man</h2>
+                </div> <!--One Punch Man-->
+                <div class="comic manhwa drama romance school-life supernatural colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Operation Name Pure Love/Obra.html">
+                        <img src="img/mangas/Operation-Name-Pure-Love.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Operation Name Pure Love</h2>
+                </div> <!--Operation Name Pure Love-->
+                <div class="comic mangá comédia drama romance psicológico School-life seinen slice-of-life">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Oyasumi Punpun/Obra.html">
+                        <img src="img/mangas/Oyasumi-Punpun.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Oyasumi Punpun</h2>
+                </div> <!--Oyasumi Punpun-->
+                <div class="comic mangá ação ficção-científica horror psicológico school-life seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Parasyte/Obra.html">
+                        <img src="img/mangas/Parasyte.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Parasyte</h2>
+                </div> <!--Parasyte-->
+                <div class="comic manhwa ação drama fantasia school-life colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Reality Quest/Obra.html">
+                        <img src="img/mangas/Reality-Quest.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Reality Quest</h2>
+                </div> <!--Reality Quest-->
+                <div class="comic mangá ação comédia ficção-científica shounen slice-of-life sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Sakamoto Days/Obra.html">
+                        <img src="img/mangas/Sakamoto-Days.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Sakamoto Days</h2>
+                </div> <!--Sakamoto Days-->
+                <div class="comic manhwa ação aventura drama fantasia isekai shounen sobrenatural baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Second Life Ranker/Obra.html">
+                        <img src="img/mangas/Second-Life-Ranker.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Second Life Ranker</h2>
+                </div> <!--Second Life Ranker-->
+                <div class="comic mangá ação drama fantasia-sombria horror mistério shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Shingeki no Kyojin/Obra.html">
+                        <img src="img/mangas/Shingeki-no-Kyojin.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Shingeki no Kyojin</h2>
+                </div> <!--Shingeki no Kyojin-->
+                <div class="comic manhwa horror psicológico school-life colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Shotgun Boy/Obra.html">
+                        <img src="img/mangas/Shotgun-Boy.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Shotgun Boy</h2>
+                </div> <!--Shotgun Boy-->
+                <div class="comic manhwa ação aventura fantasia shounen sobrenatural baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Solo Leveling Ragnarok/Obra.html">
+                        <img src="img/mangas/Solo-Leveling-Ragnarok.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Solo Leveling: Ragnarok</h2>
+                </div> <!--Solo Leveling: Ragnarok-->
+                <div class="comic manhwa ação aventura fantasia shounen sobrenatural adaptado-para-anime baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Solo Leveling/Obra.html">
+                        <img src="img/mangas/Solo-Leveling.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Solo Leveling</h2>
+                </div> <!--Solo Leveling-->
+                <div class="comic mangá comédia romance school-life seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Sono Bisque Doll wa Koi wo Suru/Obra.html">
+                        <img src="img/mangas/Sono-Bisque-Doll-wa-Koi-wo-Suru.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Sono Bisque Doll wa Koi wo Suru</h2>
+                </div> <!--Sono Bisque Doll wa Koi wo Suru-->
+                <div class="comic mangá aventura drama fantasia slice-of-life adaptado-para-anime hiato">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Sousou no Frieren/Obra.html">
+                        <img src="img/mangas/Sousou-no-Frieren.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Sousou no Frieren</h2>
+                </div> <!--Sousou no Frieren-->
+                <div class="comic mangá ação aventura comédia romance shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/SPY×FAMILY/Obra.html">
+                        <img src="img/mangas/SPY-x-FAMILY.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">SPY×FAMILY</h2>
+                </div> <!--SPY×FAMILY-->
+                <div class="comic manhua comédia drama gl romance shoujo-ai school-life yuri colorido webtoons">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/SQ Begin WYour Name!/Obra.html">
+                        <img src="img/mangas/SQ-Begin-WYour-Name.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">SQ: Begin W/Your Name!</h2>
+                </div> <!--SQ: Begin W/Your Name!-->
+                <div class="comic manhwa ação fantasia psicológico sobrenatural baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/SSS-Class Revival Hunter/Obra.html">
+                        <img src="img/mangas/SSS-Class-Revival-Hunter.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">SSS-Class Revival Hunter</h2>
+                </div> <!--SSS-Class Revival Hunter-->
+                <div class="comic manhwa ação aventura comédia drama psicológico romance seinen tragédia">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Sun-Ken Rock/Obra.html">
+                        <img src="img/mangas/Sun-Ken-Rock.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Sun-Ken Rock</h2>
+                </div> <!--Sun-Ken Rock-->
+                <div class="comic mangá drama horror psicológico sobrenatural colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Sweet Home/Obra.html">
+                        <img src="img/mangas/Sweet-Home.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Sweet Home</h2>
+                </div> <!--Sweet Home-->
+                <div class="comic manhwa ação aventura drama fantasia baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Sword Fanatic Wanders Through The Night/Obra.html">
+                        <img src="img/mangas/Sword-Fanatic-Wanders-Through-The-Night.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Sword Fanatic Wanders Through The Night</h2>
+                </div> <!--Sword Fanatic Wanders Through The Night-->
+                <div class="comic mangá comédia drama mistério romance slice-of-life baseado-em-uma-web-novel adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Apothecary Diaries/Obra.html">
+                        <img src="img/mangas/The-Apothecary-Diaries.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Apothecary Diaries</h2>
+                </div> <!--The Apothecary Diaries-->
+                <div class="comic manhwa ação comédia fantasia iseka baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Beginning After the End/Obra.html">
+                        <img src="img/mangas/The-Beginning-After-the-End.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Beginning After the End</h2>
+                </div> <!--The Beginning After the End-->
+                <div class="comic manhwa ação drama school-life shonen colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Best Man In Charge/Obra.html">
+                        <img src="img/mangas/The-Best-Man-In-Charge.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Best Man In Charge</h2>
+                </div> <!--The Best Man In Charge-->
+                <div class="comic manhwa ação drama shonen colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Boxer/Obra.html">
+                        <img src="img/mangas/The-Boxer.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Boxer</h2>
+                </div> <!--The Boxer-->
+                <div class="comic manhwa aventura comédia drama fantasia shounen sobrenatural colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Greatest Estate Designer/Obra.html">
+                        <img src="img/mangas/The-Greatest-Estate-Designer.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Greatest Estate Designer</h2>
+                </div> <!--The Greatest Estate Designer-->
+                <div class="comic mangá gl romance shoujo-ai school-life yuri">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Guy She Was Interested in Wasn_t a Guy at All/Obra.html">
+                        <img src="img/mangas/The-Guy-She-Was-Interested-in-Wasn_t-a-Guy-at-All.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Guy She Was Interested in Wasn't a Guy at All</h2>
+                </div> <!--The Guy She Was Interested in Wasn't a Guy at All-->
+                <div class="comic manhwa drama fantasia romance baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Princess Imprints a Traitor/Obra.html">
+                        <img src="img/mangas/The-Princess-Imprints-a-Traitor.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Princess Imprints a Traitor</h2>
+                </div> <!--The Princess Imprints a Traitor-->
+                <div class="comic mangá ação drama fantasia-sombria ficção-científica horror mistério psicológico shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/The Promised Neverland/Obra.html">
+                        <img src="img/mangas/The-Promised-Neverland.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Promised Neverland</h2>
+                </div> <!--The Promised Neverland-->
+                <div class="comic manhwa drama fantasia Isekai psicológico romance baseado-em-uma-web-novel colorido hiato webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/The Way to Protect the Female Lead’s Older Brother/Obra.html">
+                        <img src="img/mangas/The-Way-to-Protect-the-Female-Lead_s-Older-Brother.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">The Way to Protect the Female Lead’s Older Brother</h2>
+                </div> <!--The Way to Protect the Female Lead’s Older Brother-->
+                <div class="comic mangá ação drama horror psicológico seinen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Tokyo Ghoul/Obra.html">
+                        <img src="img/mangas/Tokyo-Ghoul.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Tokyo Ghoul</h2>
+                </div> <!--Tokyo Ghoul-->
+                <div class="comic mangá ação drama shounen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Tokyo Revengers/Obra.html">
+                        <img src="img/mangas/Tokyo-Revengers.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Tokyo Revengers</h2>
+                </div> <!--Tokyo Revengers-->
+                <div class="comic mangá drama horror shoujo sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Tomie/Obra.html">
+                        <img src="img/mangas/Tomie.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Tomie</h2>
+                </div> <!--Tomie-->
+                <div class="comic manhwa ação aventura comédia fantasia iseka baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Trash of the Count’s Family/Obra.html">
+                        <img src="img/mangas/Trash-of-the-Count_s-Family.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Trash of the Count’s Family</h2>
+                </div> <!--Trash of the Count’s Family-->
+                <div class="comic manhwa drama fantasia romance baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Under the Oak Tree/Obra.html">
+                        <img src="img/mangas/Under-the-Oak-Tree.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Under the Oak Tree</h2>
+                </div> <!--Under the Oak Tree-->
+                <div class="comic manhwa ação drama fantasia romance sobrenatural colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Unholy Blood/Obra.html">
+                        <img src="img/mangas/Unholy-Blood.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Unholy Blood</h2>
+                </div> <!--Unholy Blood-->
+                <div class="comic mangá horror psicológico seinen sobrenatural adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Uzumaki/Obra.html">
+                        <img src="img/mangas/Uzumaki.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Uzumaki: Spiral into Horror</h2>
+                </div> <!--Uzumaki: Spiral into Horror-->
+                <div class="comic mangá ação aventura drama seinen hiato">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Vagabond/Obra.html">
+                        <img src="img/mangas/Vagabond.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Vagabond</h2>
+                </div> <!--Vagabond-->
+                <div class="comic mangá drama romance slice-of-life colorido">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Veil/Obra.html">
+                        <img src="img/mangas/Veil.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Veil</h2>
+                </div> <!--Veil-->
+                <div class="comic manhwa fantasia harém-reverso iseka romance baseado-em-uma-web-novel colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Villains Are Destined to Die/Obra.html">
+                        <img src="img/mangas/Villains-Are-Destined-to-Die.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Villains Are Destined to Die</h2>
+                </div> <!--Villains Are Destined to Die-->
+                <div class="comic mangá ação aventura drama psicológico seinen adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Vinland Saga/Obra.html">
+                        <img src="img/mangas/Vinland-Saga.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Vinland Saga</h2>
+                </div> <!--Vinland Saga-->
+                <div class="comic manhwa ação comédia drama romance colorido webtoons">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Wind Breaker/Obra.html">
+                        <img src="img/mangas/Wind-Breaker.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Wind Breaker</h2>
+                </div> <!--Wind Breaker-->
+                <div class="comic mangá ação aventura drama fantasia romance shoujo adaptado-para-anime">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Yona of the Dawn/Obra.html">
+                        <img src="img/mangas/Yona-of-the-Dawn.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Yona of the Dawn</h2>
+                </div> <!--Yona of the Dawn-->
+            </section>
+        </div>
+    </main>
+    <footer class="footer-style">
+        <section>
+            <div class="imagen-text-position">
+                <a href="index.html" id="imagen-text">
+                    <img src="svg/Icon_2.svg" style="width: 580px; height: 280px;">
+                </a>
+                <div class="social-network">
+                    <a href="https://www.instagram.com/kitsune_haven/">
+                        <img src="svg/social/instagram.svg" alt="" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="svg/social/youtube.svg" alt="" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        <img src="svg/social/facebook.svg" alt="" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://twitter.com/home">
+                        <img src="svg/social/twitter.svg" alt="" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://discord.com/">
+                        <img src="svg/social/discord.svg" alt="" style="width: 60px; height: 60px;">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="style-text">
+                <p>
+                    Direitos autorais e marcas para mangás, e outros materiais promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos termos da cláusula de uso justo da Lei de Direitos Autorais Americana. (Copyrights and trademarks for the manga, and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the U.S. Copyright Law.)
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+    <script src="search.js"></script> 
+</body>
+</html>

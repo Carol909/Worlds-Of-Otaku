@@ -3,118 +3,863 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World of Otaku | Início</title>
-    <link rel="shortcut icon" href="img/logo.png" type="imagex/png" sizes="64x64px">
+    <title>Kitsune Haven | Início</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="imagex/png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="styler.css">
 </head>
 <body>
-    <div class="bar-position">
-        <div class="title-position">
-            <div class="title"><a href="index.html">World of Otaku</a></div>
-            <div class="title2">オタクの世界</div>
-        </div>
-        <div class="bar-menu-options-position">
-            <div class="bar-menu-options">
-                <ul style="list-style: none;">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#">Gêneros</a></li>
-                    <li><a href="#">Novel</a></li>
-                </ul>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">Kitsune Haven</a>
+                <span class="subtitle">キツネヘブン</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="All_mangas.html">Obras</a></li>
+                <li><a href="About us.html">Sobre Nós</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Pesquisar...">
+                <button type="submit" class="search-button" id="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#458cf4;">
+                        <g fill="#458cf4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(10.66667,10.66667)">
+                                <path d="M10,2c-4.40347,0 -8,3.59653 -8,8c0,4.40347 3.59653,8 8,8c1.75213,0 3.37052,-0.57793 4.69141,-1.54102l5.1543,5.1543c0.31352,0.32654 0.77908,0.45808 1.21713,0.34388c0.43805,-0.1142 0.78014,-0.45628 0.89433,-0.89433c0.1142,-0.43805 -0.01734,-0.90361 -0.34388,-1.21713l-5.1543,-5.1543c0.96309,-1.32088 1.54102,-2.93928 1.54102,-4.69141c0,-4.40347 -3.59653,-8 -8,-8zM10,4.5c3.05237,0 5.5,2.44763 5.5,5.5c0,3.05237 -2.44763,5.5 -5.5,5.5c-3.05237,0 -5.5,-2.44763 -5.5,-5.5c0,-3.05237 2.44763,-5.5 5.5,-5.5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            <h1>|</h1>
+            <div class="nav_sign_in">
+                <a href="Login.html">Entrar</a>
+            </div>
+            <div class="nav_sign_up">
+                <a href="Register.html">Cadastra-se</a>
             </div>
         </div>
-        <div class="bar-search-position">
-            <div class="bar-search">
-                <input type="text" id="txtbusca" placeholder="Pesquisar...">
-                <div class="magnifier-position"><img src="svg/magnifying-glass.svg" id="magnifier" alt="lupa"></div>
-            </div>
-        </div>
-        <div class="menu-hamuburger-position">
-            <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="90" onclick="this.classList.toggle('active')">
-                <path
-                    class="line top"
-                    d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
-                <path
-                    class="line middle"
-                    d="m 70,50 h -40" />
-                <path
-                    class="line bottom"
-                    d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
-            </svg>
-        </div>
-    </div>
+    </nav>
     <section class="containerproje">
         <div class="slide-container active">
             <div class="slide">
                 <div class="contentproje">
-                    <h3>Solo<br>Leveling</h3>
-                    <p>10 anos atrás, depois que o “Portão” que conectou o mundo real com o mundo dos monstros foi aberto, algumas pessoas comuns e ordinárias receberam o poder de caçar monstros dentro do Portão. Eles são conhecidos como “Caçadores”. No entanto, nem todos os caçadores são poderosos. Seu nome é Sung Jin-Woo, um caçador E-rank...</p>
-                    <a href="#" class="button-to-read"><img src="./svg/triangle.svg" id="Triangle">Ler Agora</a>
+                    <h3>Jujutsu Kaisen<span class="chapter-count">Capítulo: 265</span></h3>
+                    <div class="tags">
+                        <a href="All_mangas.html?tag=Ação" class="tag">Ação</a>
+                        <a href="All_mangas.html?tag=Aventura" class="tag">Aventura</a>
+                        <a href="All_mangas.html?tag=Fantasia-sombria" class="tag">Fantasia-sombria</a>
+                        <a href="All_mangas.html?tag=Horror" class="tag">Horror</a>
+                        <span class="tag">...</span>
+                    </div>
+                    <p>Itadori Yuuji, um estudante do colegial com uma capacidade física única, tem como rotina visitar seu avô que está hospitalizado. Porém, um dia, o selo de um "objeto amaldiçoado" escondido em sua escola é rompido, fazendo surgir criaturas assustadoras. Para salvar seus colegas ele parte em direção ao colégio, quando algo inesperado acontece...!</p>
+                    <a href="obras/Jujutsu Kaisen/Obra.html" class="button-to-read"><svg width="23px" height="23px" viewBox="0 0 512 512" id="Triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="drop" transform="translate(32.000000, 42.666667)"><path d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z" id="Combined-Shape"></path></g></g></g></svg>Ler Agora</a>
                 </div>
             </div>
         </div>
-
         <div class="slide-container">
             <div class="slide">
                 <div class="contentproje">
-                    <h3>Solo<br>Leveling</h3>
-                    <p>10 anos atrás, depois que o “Portão” que conectou o mundo real com o mundo dos monstros foi aberto, algumas pessoas comuns e ordinárias receberam o poder de caçar monstros dentro do Portão. Eles são conhecidos como “Caçadores”. No entanto, nem todos os caçadores são poderosos. Seu nome é Sung Jin-Woo, um caçador E-rank...</p>
-                    <a href="#" class="button-to-read"><img src="./svg/triangle.svg" id="Triangle">Ler Agora</a>
+                    <h3>Omniscient Reader<span class="chapter-count">Capítulo: 228</span></h3>
+                    <div class="tags">
+                        <a href="All_mangas.html?tag=Ação" class="tag">Ação</a>
+                        <a href="All_mangas.html?tag=Aventura" class="tag">Aventura</a>
+                        <a href="All_mangas.html?tag=Drama" class="tag">Drama</a>
+                        <a href="All_mangas.html?tag=Colorido" class="tag">Colorido</a>
+                        <span class="tag">...</span>
+                    </div>
+                    <p>Como um trabalhador de escritório esforçado, a única alegria de Dokja Kim na vida é um romance online tão obscuro que ele é seu único leitor. Então, um dia, a história chega ao fim... e o mundo também. Pessoas ao redor do globo de repente se veem sendo massacradas por monstros horríveis ou colocadas umas contra as outras em cenários sádicos saídos diretamente do romance...</p>
+                    <a href="obras/Omniscient Reader/Obra.html" class="button-to-read"><svg width="23px" height="23px" viewBox="0 0 512 512" id="Triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="drop" transform="translate(32.000000, 42.666667)"><path d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z" id="Combined-Shape"></path></g></g></g></svg>Ler Agora</a>
                 </div>
             </div>
         </div>
-
         <div class="slide-container">
             <div class="slide">
                 <div class="contentproje">
-                    <h3>Solo<br>Leveling</h3>
-                    <p>10 anos atrás, depois que o “Portão” que conectou o mundo real com o mundo dos monstros foi aberto, algumas pessoas comuns e ordinárias receberam o poder de caçar monstros dentro do Portão. Eles são conhecidos como “Caçadores”. No entanto, nem todos os caçadores são poderosos. Seu nome é Sung Jin-Woo, um caçador E-rank...</p>
-                    <a href="#" class="button-to-read"><img src="./svg/triangle.svg" id="Triangle">Ler Agora</a>
+                    <h3>One piece<span class="chapter-count">Capítulo: 1126</span></h3>
+                    <div class="tags">
+                        <a href="All_mangas.html?tag=Ação" class="tag">Ação</a>
+                        <a href="All_mangas.html?tag=Aventura" class="tag">Aventura</a>
+                        <a href="All_mangas.html?tag=Fantasia" class="tag">Fantasia</a>
+                        <a href="All_mangas.html?tag=Shounen" class="tag">Shounen</a>
+                        <span class="tag">...</span>
+                    </div>
+                    <p>Há muito tempo, o infame Gol D. Roger era o pirata mais forte e poderoso dos mares. Quando estava prestes a ser executado, ele revelou que escondeu toda a sua riqueza, incluindo o lendário tesouro conhecido como One Piece, em uma ilha no final da Grand Line - um mar traiçoeiro e verdadeiramente imprevisível. Monkey D. Luffy é um jovem espirituoso, enérgico e um tanto estúpido com um grande sonho...</p>
+                    <a href="obras/One Piece/Obra.html" class="button-to-read"><svg width="23px" height="23px" viewBox="0 0 512 512" id="Triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="drop" transform="translate(32.000000, 42.666667)"><path d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z" id="Combined-Shape"></path></g></g></g></svg>Ler Agora</a>
                 </div>
             </div>
         </div>
-
         <div class="slide-container">
             <div class="slide">
                 <div class="contentproje">
-                    <h3>Solo<br>Leveling</h3>
-                    <p>10 anos atrás, depois que o “Portão” que conectou o mundo real com o mundo dos monstros foi aberto, algumas pessoas comuns e ordinárias receberam o poder de caçar monstros dentro do Portão. Eles são conhecidos como “Caçadores”. No entanto, nem todos os caçadores são poderosos. Seu nome é Sung Jin-Woo, um caçador E-rank...</p>
-                    <a href="#" class="button-to-read"><img src="./svg/triangle.svg" id="Triangle">Ler Agora</a>
+                    <h3>The Beginning<br>After the End<span class="chapter-count">Capítulo: 196</span></h3>
+                    <div class="tags">
+                        <a href="All_mangas.html?tag=Ação" class="tag">Ação</a>
+                        <a href="All_mangas.html?tag=Comédia" class="tag">Comédia</a>
+                        <a href="All_mangas.html?tag=Colorido" class="tag">Colorido</a>
+                        <a href="All_mangas.html?tag=Fantasia" class="tag">Fantasia</a>
+                        <span class="tag">...</span>
+                    </div>
+                    <p>O Rei Grey tem força, riqueza e prestígio inigualáveis ​​em um mundo governado pela habilidade marcial. No entanto, a solidão permanece bem atrás daqueles com grande poder. Sob o exterior glamoroso de um rei poderoso, espreita a casca do homem, desprovida de propósito e vontade. Reencarnado em um novo mundo cheio de magia e monstros, o rei tem uma segunda chance de reviver sua vida...</p>
+                    <a href="obras/The Beginning After the End/Obra.html" class="button-to-read"><svg width="23px" height="23px" viewBox="0 0 512 512" id="Triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="drop" transform="translate(32.000000, 42.666667)"><path d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z" id="Combined-Shape"></path></g></g></g></svg>Ler Agora</a>
                 </div>
             </div>
         </div>
-
         <div class="slide-container">
             <div class="slide">
                 <div class="contentproje">
-                    <h3>Solo<br>Leveling</h3>
-                    <p>10 anos atrás, depois que o “Portão” que conectou o mundo real com o mundo dos monstros foi aberto, algumas pessoas comuns e ordinárias receberam o poder de caçar monstros dentro do Portão. Eles são conhecidos como “Caçadores”. No entanto, nem todos os caçadores são poderosos. Seu nome é Sung Jin-Woo, um caçador E-rank...</p>
-                    <a href="#" class="button-to-read"><img src="./svg/triangle.svg" id="Triangle">Ler Agora</a>
+                    <h3>Dandadan<span class="chapter-count">Capítulo: 160</span></h3>
+                    <div class="tags">
+                        <a href="All_mangas.html?tag=Ação" class="tag">Ação</a>
+                        <a href="All_mangas.html?tag=adaptado-para-anime" class="tag">Adaptado para anime</a>
+                        <a href="All_mangas.html?tag=Shounen" class="tag">Shounen</a>
+                        <a href="All_mangas.html?tag=Sobrenatural" class="tag">Sobrenatural</a>
+                        <span class="tag">...</span>
+                    </div>
+                    <p>Momo Ayase é uma estudante um tanto particular. Ela mora com sua “avozinha” que trabalha como médium e a criou com a crença de que espíritos e demônios não são apenas fruto da imaginação. Um dia ela conhece e ajuda Ken, um colega de escola que é marginalizado e intimidado por seus colegas porque ele está convicto da existência de alienígenas. Os dois, que a princípio não acreditam ter muito em comum, se desafiam para provar a existência de suas crenças sobrenaturais...</p>
+                    <a href="obras/Dandadan/Obra.html" class="button-to-read"><svg width="23px" height="23px" viewBox="0 0 512 512" id="Triangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="drop" transform="translate(32.000000, 42.666667)"><path d="M246.312928,5.62892705 C252.927596,9.40873724 258.409564,14.8907053 262.189374,21.5053731 L444.667042,340.84129 C456.358134,361.300701 449.250007,387.363834 428.790595,399.054926 C422.34376,402.738832 415.04715,404.676552 407.622001,404.676552 L42.6666667,404.676552 C19.1025173,404.676552 7.10542736e-15,385.574034 7.10542736e-15,362.009885 C7.10542736e-15,354.584736 1.93772021,347.288125 5.62162594,340.84129 L188.099293,21.5053731 C199.790385,1.04596203 225.853517,-6.06216498 246.312928,5.62892705 Z" id="Combined-Shape"></path></g></g></g></svg>Ler Agora</a>
                 </div>
             </div>
         </div>
-        <div id="prev" onclick="prev()"> < </div>
-        <div id="next" onclick="next()"> > </div>
+        <div id="prev" onclick="prev()" style="font-size: 50px;"><i class="uil uil-angle-left"></i></div>
+        <div id="next" onclick="next()" style="font-size: 50px;"><i class="uil uil-angle-right"></i></div>
     </section>
+    <main class="conteudo">
+        <div class="all__comics__wrapper">
+            <h2 class="conteudo_titulo">Obras</h2>
+            <section class="all__comics">
+                <div class="comic" id="border">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/19 Days/Obra.html">
+                        <div>
+                            <img src="img/mangas/19-Days.jpg" alt="Título">
+                        </div>
+                    </a>
+                    <h2 class="comic__title">19 Days</h2>
+                </div> <!--19 Days-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/20th Century Boys/Obra.html">
+                        <img src="img/mangas/20th-Century-Boys.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">20th Century Boys</h2>
+                </div> <!--20th Century Boys-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/A Business Proposal/Obra.html">
+                        <img src="img/mangas/A-Business-Proposal.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">A Business Proposal</h2>
+                </div> <!--A Business Proposal-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/After School Lessons for Unripe Apples/Obra.html">
+                        <img src="img/mangas/After-School-Lessons for-Unripe-Apples.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">After School Lessons for Unripe Apples</h2>
+                </div><!--After School Lessons for Unripe Apples-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Ajin Demi-Human/Obra.html">
+                        <img src="img/mangas/Ajin-Demi-Human.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Ajin: Demi-Human</h2>
+                </div> <!--Ajin: Demi-Human-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Akame ga Kill!/Obra.html">
+                        <img src="img/mangas/Akame-ga-Kill!.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Akame ga Kill!</h2>
+                </div> <!--Akame ga Kill!-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Banana Fish/Obra.html">
+                        <img src="img/mangas/Banana-Fish.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Banana Fish</h2>
+                </div><!--Banana Fish-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Berserk/Obra.html">
+                        <img src="img/mangas/Berserk.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Berserk</h2>
+                </div> <!--Berserk-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Beware of the Villainess!/Obra.html">
+                        <img src="img/mangas/Beware-of-the-Villainess!.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Beware of the Villainess!</h2>
+                </div> <!--Beware of the Villainess!-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Black Clover/Obra.html">
+                        <img src="img/mangas/Black-Clover.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Black Clover</h2>
+                </div> <!--Black Clover-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Bleach/Obra.html">
+                        <img src="img/mangas/Bleach.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Bleach</h2>
+                </div> <!--Bleach-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Boku no Hero Academia/Obra.html">
+                        <img src="img/mangas/Boku-no-Hero-Academia.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Boku no Hero Academia</h2>
+                </div> <!--Boku no Hero Academia-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Chainsaw Man/Obra.html">
+                        <img src="img/mangas/Chainsaw-Man.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Chainsaw Man</h2>
+                </div> <!--Chainsaw Man-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Choujin X/Obra.html">
+                        <img src="img/mangas/Choujin-X.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Choujin X</h2>
+                </div> <!--Choujin X-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Claymore/Obra.html">
+                        <img src="img/mangas/Claymore.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Claymore</h2>
+                </div> <!--Claymore-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Dandadan/Obra.html">
+                        <img src="img/mangas/Dandadan.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dandadan</h2>
+                </div> <!--Dandadan-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Daytime Star/Obra.html">
+                        <img src="img/mangas/Daytime-Star.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Daytime Star</h2>
+                </div> <!--Daytime Star-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Deadman Wonderland/Obra.html">
+                        <img src="img/mangas/Deadman-Wonderland.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Deadman Wonderland</h2>
+                </div> <!--Deadman Wonderland-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Death Note/Obra.html">
+                        <img src="img/mangas/Death-Note.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Death Note</h2>
+                </div> <!--Death Note-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Devilman/Obra.html">
+                        <img src="img/mangas/Devilman.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Devilman</h2>
+                </div> <!--Devilman-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Director Kim/Obra.html">
+                        <img src="img/mangas/Director-Kim.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Director Kim</h2>
+                </div> <!--Director Kim-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Dorohedoro/Obra.html">
+                        <img src="img/mangas/Dorohedoro.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dorohedoro</h2>
+                </div> <!--Dorohedoro-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Dr. Stone/Obra.html">
+                        <img src="img/mangas/Dr.-Stone.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dr. Stone</h2>
+                </div> <!--Dr. Stone-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Dreaming Freedom/Obra.html">
+                        <img src="img/mangas/Dreaming-Freedom.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Dreaming Freedom</h2>
+                </div> <!--Dreaming Freedom-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Eleceed/Obra.html">
+                        <img src="img/mangas/Eleceed.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Eleceed</h2>
+                </div> <!--Eleceed-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Elfen Lied/Obra.html">
+                        <img src="img/mangas/Elfen-Lied.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Elfen Lied</h2>
+                </div> <!--Elfen Lied-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Fairy Tail/Obra.html">
+                        <img src="img/mangas/Fairy-Tail.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Fairy Tail</h2>
+                </div> <!--Fairy Tail-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Fire Punch/Obra.html">
+                        <img src="img/mangas/Fire-Punch.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Fire Punch</h2>
+                </div> <!--Fire Punch-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Fullmetal Alchemist/Obra.html">
+                        <img src="img/mangas/Fullmetal-Alchemist.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Fullmetal Alchemist </h2>
+                </div> <!--Fullmetal Alchemist -->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Gangsta/Obra.html">
+                        <img src="img/mangas/Gangsta.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gangsta.</h2>
+                </div> <!--Gangsta.-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="completo"></div>
+                    <a href="obras/Gantz/Obra.html">
+                        <img src="img/mangas/Gantz.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gantz</h2>
+                </div> <!--Gantz-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Gintama/Obra.html">
+                        <img src="img/mangas/Gintama.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gintama</h2>
+                </div> <!--Gintama-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Gokushufudou/Obra.html">
+                        <img src="img/mangas/Gokushufudou.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Gokushufudou</h2>
+                </div> <!--Gokushufudou-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Guard Pass/Obra.html">
+                        <img src="img/mangas/Guard-Pass.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Guard Pass</h2>
+                </div> <!--Guard Pass-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Haikyuu!!/Obra.html">
+                        <img src="img/mangas/Haikyuu!!.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Haikyuu!!</h2>
+                </div> <!--Haikyuu!!-->
+                <div class="comic">
+                    <div class="comic__type">Light Novels</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Heaven Official_s Blessing (novel)/Obra.html">
+                        <img src="img/mangas/Heaven-Official_s-Blessing-_novel_.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Heaven Official's Blessing</h2>
+                </div> <!--Heaven Official's Blessing (novel)-->
+                <div class="comic">
+                    <div class="comic__type">Manhua</div>
+                    <div class="status_popular" id="in_hiato" title="Hiato"></div>
+                    <a href="obras/Heaven Official_s Blessing/Obra.html">
+                        <img src="img/mangas/Heaven-Official_s-Blessing.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Heaven Official's Blessing</h2>
+                </div> <!--Heaven Official's Blessing-->
+                <div class="comic">
+                    <div class="comic__type">Mangá</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/Hellsing/Obra.html">
+                        <img src="img/mangas/Hellsing.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Hellsing</h2>
+                </div> <!--Hellsing-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Hero Killer/Obra.html">
+                        <img src="img/mangas/Hero-Killer.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">Hero Killer</h2>
+                </div> <!--Hero Killer-->
+                <div class="comic">
+                    <div class="comic__type">Manhwa</div>
+                    <div class="status_popular" id="completed" title="Concluído"></div>
+                    <a href="obras/How to Fight/Obra.html">
+                        <img src="img/mangas/How-to-Fight.jpg" alt="Título">
+                    </a>
+                    <h2 class="comic__title">How to Fight</h2>
+                </div> <!--How to Fight-->
+            </section>
+        </div>
+        <section class="popular">
+            <h2 class="conteudo_titulo_2">Popular</h2>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">1</span>
+                    <div class="comic__type_popular">Manhwa</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Solo Leveling/Obra.html">
+                        <img src="img/mangas/Solo-Leveling.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/Solo Leveling/Obra.html" class="title_popular"><p>Solo Leveling</p></a>
+                        <p class="chapter">Capítulos: 200</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Fantasia" id="tag">Fantasia,</a>
+                            <a href="All_mangas.html?tag=Shounen" id="tag">Shounen,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.656 de 5 de 29.786 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="16" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Solo Leveling-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">2</span>
+                    <div class="comic__type_popular">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/Berserk/Obra.html">
+                        <img src="img/mangas/Berserk.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/Berserk/Obra.html" class="title_popular"><p>Berserk</p></a>
+                        <p class="chapter">Capítulos: 376</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Drama" id="tag">Drama,</a>
+                            <a href="All_mangas.html?tag=Fantasia Sombria" id="tag">Fantasia Sombria,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.592 de 5 de 10.882 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12.5" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.6</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Berserk-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">3</span>
+                    <div class="comic__type_popular">Mangá</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/One Piece/Obra.html">
+                        <img src="img/mangas/One-Piece.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/One Piece/Obra.html" class="title_popular"><p>One Piece</p></a>
+                        <p class="chapter">Capítulos: 1122</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Comédia" id="tag">Comédia,</a>
+                            <a href="All_mangas.html?tag=Fantasia" id="tag">Fantasia,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.556 de 5 de 17.187 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.6</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--One Piece-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">4</span>
+                    <div class="comic__type_popular">Light Novel</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Heaven Official_s Blessing (novel)/Obra.html">
+                        <img src="img/mangas/Heaven-Official_s-Blessing-_novel_.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/Heaven Official_s Blessing (novel)/Obra.html" class="title_popular"><p>Heaven Official's...</p></a>
+                        <p class="chapter">Capítulos: 252</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=BL" id="tag">BL,</a>
+                            <a href="All_mangas.html?tag=Comédia" id="tag">Comédia,</a>
+                            <a href="All_mangas.html?tag=Drama" id="tag">Drama,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.531 de 5 de 2.145 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Heaven Official's Blessing-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">5</span>
+                    <div class="comic__type_popular">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/JoJo’s Bizarre Adventure Part 7/Obra.html" >
+                        <img src="img/mangas/JoJo’s-Bizarre-Adventure-Part-7.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/JoJo’s Bizarre Adventure Part 7/Obra.html" class="title_popular"><p>JoJo’s Bizarre...</p></a>
+                        <p class="chapter">Capítulos: 95</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Horror" id="tag">Horror,</a>
+                            <a href="All_mangas.html?tag=Mistério" id="tag">Mistério,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.517 de 5 de 3.034 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--JoJo’s Bizarre Adventure Part 7: Steel Ball Run-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">6</span>
+                    <div class="comic__type_popular">Mangá</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Fullmetal Alchemist/Obra.html">
+                        <img src="img/mangas/Fullmetal-Alchemist.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/Fullmetal Alchemist/Obra.html" class="title_popular"><p>Fullmetal Alchemist</p></a>
+                        <p class="chapter">Capítulos: 110</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Drama" id="tag">Drama,</a>
+                            <a href="All_mangas.html?tag=Fantasia" id="tag">Fantasia,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.513 de 5 de 11.438 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fullmetal Alchemist-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">7</span>
+                    <div class="comic__type_popular">Light Novel</div>
+                    <div class="status" id="completed" title="Concluído"></div>
+                    <a href="obras/Omniscient Reader (novel)/Obra.html">
+                        <img src="img/mangas/Omniscient-Reader_novel_.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/Omniscient Reader (novel)/Obra.html" class="title_popular"><p>Omniscient Reader</p></a>
+                        <p class="chapter">Capítulos: 552</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Drama" id="tag">Drama,</a>
+                            <a href="All_mangas.html?tag=Fantasia" id="tag">Fantasia,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4,512 de 5 de 1.345 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Omniscient Reader-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">8</span>
+                    <div class="comic__type_popular">Manhwa</div>
+                    <a href="obras/The Beginning After the End/Obra.html">
+                        <img src="img/mangas/The-Beginning-After-the-End.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/The Beginning After the End/Obra.html" class="title_popular"><p>The Beginning After...</p></a>
+                        <div class="status" id="in_progress" title="Em Andamento"></div>
+                        <p class="chapter">Capítulos: 188</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Comédia" id="tag">Comédia,</a>
+                            <a href="All_mangas.html?tag=Fantasia" id="tag">Fantasia,</a>
+                            <a href="All_mangas.html?tag=Isekai" id="tag">Isekai,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.511 de 5 de 15.478 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--The Beginning After the End-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">9</span>
+                    <div class="comic__type_popular">Mangá</div>
+                    <div class="status" id="in_hiato" title="Em Andamento"></div>
+                    <a href="obras/Vagabond/Obra.html">
+                        <img src="img/mangas/Vagabond.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/Vagabond/Obra.html" class="title_popular"><p>Vagabond</p></a>
+                        <p class="chapter">Capítulos: 327.5</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Drama" id="tag">Drama,</a>
+                            <a href="All_mangas.html?tag=Seinen" id="tag">Seinen,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.493 de 5 de 3.720 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Vagabond-->
+            <hr>
+            <div class="populares__box">
+                <div class="border_red">
+                    <span class="contagem">10</span>
+                    <div class="comic__type_popular">Manhwa</div>
+                    <div class="status" id="in_progress" title="Em Andamento"></div>
+                    <a href="obras/The Greatest Estate Designer/Obra.html">
+                        <img src="img/mangas/The-Greatest-Estate-Designer.jpg" class="popular_itens">
+                    </a>
+                    <div class="itens_red">
+                        <a href="obras/The Greatest Estate Designer/Obra.html" class="title_popular"><p>The Greatest Estate...</p></a>
+                        <p class="chapter">Capítulos: 154</p>
+                        <p class="itens_genero">Gêneros:
+                            <a href="All_mangas.html?tag=Ação" id="tag">Ação,</a>
+                            <a href="All_mangas.html?tag=Aventura" id="tag">Aventura,</a>
+                            <a href="All_mangas.html?tag=Fantasia" id="tag">Fantasia,</a>
+                            <a href="All_mangas.html?tag=iseka" id="tag">Iseka,</a>
+                            <span>...</span>
+                        </p>
+                        <div class="stars" title="4.491 de 5 de 4.337 votos">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="12" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                            <span id="pontos">4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--The Greatest Estate Designer-->
+        </section>
+    </main>
+    <div class="aba-obras">
+        <a href="All_mangas.html" class="all_mangas">Todas as Obras</a>
+    </div>
     <footer class="footer-style">
         <section>
             <div class="imagen-text-position">
-                <a href="index.html">
-                    <img src="svg/Icon_2.svg" id="logo" style="width: 490px; height: 180px;">
+                <a href="index.html" id="imagen-text">
+                    <img src="svg/Icon_2.svg" style="width: 580px; height: 280px;">
                 </a>
                 <div class="social-network">
-                    <a href="#">
+                    <a href="https://www.instagram.com/kitsune_haven/">
                         <img src="svg/social/instagram.svg" alt="" style="width: 60px; height: 60px;">
                     </a>
-                    <a href="#">
+                    <a href="https://www.youtube.com/">
                         <img src="svg/social/youtube.svg" alt="" style="width: 60px; height: 60px;">
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/?locale=pt_BR">
                         <img src="svg/social/facebook.svg" alt="" style="width: 60px; height: 60px;">
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/home">
                         <img src="svg/social/twitter.svg" alt="" style="width: 60px; height: 60px;">
                     </a>
-                    <a href="#">
+                    <a href="https://discord.com/">
                         <img src="svg/social/discord.svg" alt="" style="width: 60px; height: 60px;">
                     </a>
                 </div>
@@ -128,5 +873,6 @@
         </section>
     </footer>
     <script src="script.js"></script>
+    <script src="search.js"></script>    
 </body>
 </html>
