@@ -1,0 +1,437 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Alte Haas Grotesk";
+    background-color: #EBEDE9;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #10141F;
+    border-radius: 15px
+}
+
+@font-face {
+    font-family: "Alte Haas Grotesk";
+    src: url(../../../../font/AlteHaasGroteskRegular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Boldfinger";
+    src: url(../../../../font/Boldfinger.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url(../../../../font/Nexa-Heavy.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Valorant";
+    src: url(../../../../font/Valorant.ttf);
+    font-display: swap;
+}
+
+/*Página Obras - Nav*/
+
+.navbar{
+    width: 100%;
+    background-color: #ebede967;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    box-shadow: 0 2px 10px rgba(9, 10, 20, 0.4);
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo a{
+    font-family: "Valorant", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #090A14;
+    text-decoration: none;
+}
+
+.subtitle{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #458CF4;
+    margin-top: -5px;
+    margin: -5px 85px 0;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu li a {
+    font-family: "Nexa", sans-serif;
+    font-size: 21px;
+    text-decoration: none;
+    color: #090A14;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s, border-bottom 0.2s;
+}
+
+.nav-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #458CF4;
+    left: 0;
+    bottom: -5px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: #458CF4;
+}
+
+.nav-menu li a:hover::after,
+.nav-menu li a.active::after {
+    transform: scaleX(1);
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    border: #090A14 solid 2.7px;
+    border-radius: 50px;
+    width: 40rem;
+    height: 2.5rem;
+    padding: 5px 30px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px;
+    width: 30em;
+    color: #090A14;
+    font-family: "Nexa", sans-serif;
+}
+
+.search-container .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button{
+    position: relative;
+    left: 15px;
+}
+
+::placeholder{
+    font-family: "Nexa", sans-serif;
+    color: #090A14;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav_sign_up a{
+    background-color: #090A14;
+    border: 2px solid #090A14;
+    color: #EBEDE9;
+}
+
+.nav_sign_in a{
+    border: 2px solid #090A14;
+    color: #090A14;
+}
+
+.nav_sign_in a, .nav_sign_up a {
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-family: "Nexa", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav_sign_in:hover a, .nav_sign_up:hover a {
+    background-color: #458CF4;
+    border: 2px solid #458CF4;
+    color: #EBEDE9;
+}
+
+/*Página principal - Barra de Pesquisa*/
+
+.search-results {
+    position: absolute;
+    top: 110px;
+    right: 21.2%;
+    background-color: #c7cfccd3;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30rem;
+    transition: opacity 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.search-results.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-results::-webkit-scrollbar {
+    width: 10px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: #10141F;
+    border-radius: 15px;
+}
+
+.search-result-item {
+    position: relative;
+    top: 7px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: rgba(235, 237, 233, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.search-result-item img {
+    position: relative;
+    top: 45.5px;
+    width: 130px;
+    height: 165px;
+    object-fit:fill;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-item a {
+    position: relative;
+    top: -45px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: #090A14;
+    transition: 0.2s ease;
+}
+
+.search-result-item a:hover{
+    color: #458CF4;
+    transition: 0.2s ease;
+}
+
+.search-result-item p {
+    position: relative;
+    top: -55px;
+    left: 5px;
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #202e37;
+}
+
+.search-result-item svg{
+    position: relative;
+    top: 8px;
+    left: -5px;
+}
+
+/**/
+
+.chapter-position{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20%;
+}
+
+.obra-name a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    color: #090A14;
+    font-size: 40px;
+    font-family: "Nexa";
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.obra-name a:hover{
+    color: #458CF4;
+}
+
+.imagen img{
+    position: relative;
+    top: 10%;
+    left: -18%;
+    width: 140%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.itens{
+    padding-bottom: 3%;
+}
+
+select, button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #1e1e2f;
+    color: white;
+}
+
+#chapter-selector{
+    position: relative;
+    left: -19.5%;
+}
+
+.itens button {
+    font-family: "Nexa";
+    position: relative;
+    left: 66%;
+    background-color: transparent;
+    border: 2px solid #090A14;
+    color: #090A14;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.itens button:hover {
+    border: 2px solid #458CF4;
+    color: #458CF4;
+}
+
+.position-itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+.position-itens button {
+    text-align: center;
+    font-family: "Nexa";
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #090A14;
+    color: #090A14;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.position-itens button:hover {
+    border: 2px solid #458CF4;
+    color: #458CF4;
+}
+
+/*Página principal - footer*/
+
+.footer-style{
+    background-color: #090A14;
+    color: #EBEDE9;
+    padding: 25px 20px;
+    clear: both;
+}
+
+.imagen-text-position h3{
+    position: relative;
+    float: right;
+    padding: 0 40px 0;
+}
+
+#imagen-text{
+    margin-left: 30px;
+}
+
+.social-network a{
+    float: right;
+    margin: -60px 50px 0 2px;
+}
+
+hr{
+    position: relative;
+    width: 97%;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+.style-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-text p{
+    width: 85%;
+    height: 10%;
+    font-family: "Alte Haas Grotesk";
+    font-size: 23px;
+    color: #EBEDE9;
+    text-align: center;
+}
+
+/*Página principal - final*/

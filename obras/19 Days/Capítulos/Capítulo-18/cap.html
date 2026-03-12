@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 Days - Capítulo 18 | Kitsune Haven</title>
+    <link rel="shortcut icon" href="../../../../img/logo.ico" type="imagex/png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="../../index.html">Kitsune Haven</a>
+                <span class="subtitle">キツネヘブン</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../../../index.html">Início</a></li>
+                <li><a href="../../../../All_mangas.html">Obras</a></li>
+                <li><a href="../../../../About us.html">Sobre Nós</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Pesquisar...">
+                <button type="submit" class="search-button" id="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#458cf4;">
+                        <g fill="#458cf4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(10.66667,10.66667)">
+                                <path d="M10,2c-4.40347,0 -8,3.59653 -8,8c0,4.40347 3.59653,8 8,8c1.75213,0 3.37052,-0.57793 4.69141,-1.54102l5.1543,5.1543c0.31352,0.32654 0.77908,0.45808 1.21713,0.34388c0.43805,-0.1142 0.78014,-0.45628 0.89433,-0.89433c0.1142,-0.43805 -0.01734,-0.90361 -0.34388,-1.21713l-5.1543,-5.1543c0.96309,-1.32088 1.54102,-2.93928 1.54102,-4.69141c0,-4.40347 -3.59653,-8 -8,-8zM10,4.5c3.05237,0 5.5,2.44763 5.5,5.5c0,3.05237 -2.44763,5.5 -5.5,5.5c-3.05237,0 -5.5,-2.44763 -5.5,-5.5c0,-3.05237 2.44763,-5.5 5.5,-5.5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            <h1>|</h1>
+            <div class="nav_sign_in">
+                <a href="../../Login.html">Entrar</a>
+            </div>
+            <div class="nav_sign_up">
+                <a href="../../Register.html">Cadastra-se</a>
+            </div>
+        </div>
+    </nav>
+    <main class="chapter-position">
+        <div class="container">
+            <h1 class="obra-name">
+                <a href="../../Obra.html">- 19 days -</a>
+            </h1>
+            <div class="itens">
+                <select id="chapter-selector">
+                </select>
+                <button id="prev-btn-top">< Anterior</button>
+                <button id="next-btn-top">Próximo ></button>
+            </div>
+            <div class="imagen">
+                <img src="1.jfif" id="chapter-image" >
+                <img src="2.png">
+                <img src="3.png">
+            </div>
+            <div class="position-itens">
+                <button id="prev-btn-bottom">< Anterior</button>
+                <button id="next-btn-bottom">Próximo ></button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-style">
+        <section>
+            <div class="imagen-text-position">
+                <a href="../../../../index.html" id="imagen-text">
+                    <img src="../../../../svg/Icon_2.svg" alt="Logo" style="width: 580px; height: 280px;">
+                </a>
+                <div class="social-network">
+                    <a href="https://www.instagram.com/kitsune_haven/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../../svg/social/instagram.svg" alt="Instagram" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../../svg/social/youtube.svg" alt="Youtube" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../../svg/social/facebook.svg" alt="Facebook" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../../svg/social/twitter.svg" alt="Twitter/X" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../../../svg/social/discord.svg" alt="Discord" style="width: 60px; height: 60px;">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="style-text">
+                <p>
+                    Direitos autorais e marcas para mangás, e outros materiais promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos termos da cláusula de uso justo da Lei de Direitos Autorais Americana. (Copyrights and trademarks for the manga, and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the U.S. Copyright Law.)
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script>
+        const chapters = [
+    { id: 0, title: "Capítulo 0", url: "../Capítulo-0/cap.html" },
+    { id: 1, title: "Capítulo 1", url: "../Capítulo-1/cap.html"},
+    { id: 2, title: "Capítulo 2", url: "../Capítulo-2/cap.html"},
+    { id: 3, title: "Capítulo 3", url: "../Capítulo-3/cap.html"},
+    { id: 4, title: "Capítulo 4", url: "../Capítulo-4/cap.html"},
+    { id: 5, title: "Capítulo 5", url: "../Capítulo-5/cap.html"},
+    { id: 6, title: "Capítulo 6", url: "../Capítulo-6/cap.html"},
+    { id: 7, title: "Capítulo 7", url: "../Capítulo-7/cap.html"},
+    { id: 8, title: "Capítulo 8", url: "../Capítulo-8/cap.html"},
+    { id: 9, title: "Capítulo 9", url: "../Capítulo-9/cap.html"},
+    { id: 10, title: "Capítulo 10", url: "../Capítulo-10/cap.html"},
+    { id: 11, title: "Capítulo 11", url: "../Capítulo-11/cap.html"},
+    { id: 12, title: "Capítulo 12", url: "../Capítulo-12/cap.html"},
+    { id: 13, title: "Capítulo 13", url: "../Capítulo-13/cap.html"},
+    { id: 14, title: "Capítulo 14", url: "../Capítulo-14/cap.html"},
+    { id: 15, title: "Capítulo 15", url: "../Capítulo-15/cap.html"},
+    { id: 16, title: "Capítulo 16", url: "../Capítulo-16/cap.html"},
+    { id: 17, title: "Capítulo 17", url: "../Capítulo-17/cap.html"},
+    { id: 18, title: "Capítulo 18", url: "../Capítulo-18/cap.html"},
+    { id: 19, title: "Capítulo 19", url: "../Capítulo-19/cap.html"},
+    { id: 20, title: "Capítulo 20", url: "../Capítulo-20/cap.html"},
+];
+
+// Recuperar o capítulo atual do localStorage ou usar 0 como padrão
+let currentChapter = parseInt(localStorage.getItem("currentChapter")) || 0;
+
+// Referências aos elementos HTML
+const chapterSelector = document.getElementById("chapter-selector");
+const prevBtns = document.querySelectorAll("#prev-btn-top, #prev-btn-bottom");
+const nextBtns = document.querySelectorAll("#next-btn-top, #next-btn-bottom");
+
+// Função para renderizar os capítulos no dropdown
+function renderChapters() {
+    chapters.forEach(chapter => {
+        const option = document.createElement("option");
+        option.value = chapter.id;
+        option.textContent = chapter.title;
+        chapterSelector.appendChild(option);
+    });
+    chapterSelector.value = currentChapter; // Define o valor inicial no dropdown
+}
+
+// Função para atualizar a exibição do capítulo
+function updateChapterDisplay() {
+    const chapter = chapters.find(ch => ch.id === currentChapter);
+    if (chapter) {
+        chapterSelector.value = currentChapter; // Atualiza o dropdown
+        console.log(`Exibindo: ${chapter.title}`);
+    } else {
+        console.error("Capítulo não encontrado!");
+    }
+}
+
+// Função para redirecionar para a URL do capítulo atual
+function redirectToChapter() {
+    const chapter = chapters.find(ch => ch.id === currentChapter);
+    if (chapter) {
+        console.log(`Redirecionando para: ${chapter.url}`);
+        // Salvar o índice atual no localStorage antes de redirecionar
+        localStorage.setItem("currentChapter", currentChapter);
+        window.location.href = chapter.url; // Redireciona para a URL do capítulo
+    } else {
+        console.error("Capítulo não encontrado para redirecionamento!");
+    }
+}
+
+// Função de navegação entre capítulos
+function navigateChapter(direction) {
+    if (direction === "next" && currentChapter < chapters.length - 1) {
+        currentChapter++;
+    } else if (direction === "prev" && currentChapter > 0) {
+        currentChapter--;
+    }
+
+    // Atualiza a exibição do capítulo
+    updateChapterDisplay();
+    // Redireciona para o capítulo atualizado
+    redirectToChapter();
+}
+
+// Função para atualizar a exibição do capítulo
+function updateChapterDisplay() {
+    const chapter = chapters.find(ch => ch.id === currentChapter);
+    if (chapter) {
+        chapterSelector.value = currentChapter; // Atualiza o dropdown para refletir o capítulo atual
+        console.log(`Exibindo: ${chapter.title}`);
+    } else {
+        console.error("Capítulo não encontrado!");
+    }
+}
+
+// Adiciona eventos aos botões "Anterior" e "Próximo"
+prevBtns.forEach(btn => {
+    btn.addEventListener("click", () => navigateChapter("prev"));
+});
+
+nextBtns.forEach(btn => {
+    btn.addEventListener("click", () => navigateChapter("next"));
+});
+
+// Evento ao alterar o capítulo pelo dropdown
+chapterSelector.addEventListener("change", () => {
+    currentChapter = parseInt(chapterSelector.value, 10);
+    updateChapterDisplay();
+    redirectToChapter();
+});
+
+
+// Renderizar os capítulos no início
+renderChapters();
+updateChapterDisplay();
+    </script>
+    <script src="../search.js"></script> 
+</body>
+</html>
