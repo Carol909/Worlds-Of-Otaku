@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unholy Blood | Kitsune Haven</title>
+    <link rel="shortcut icon" href="../../img/logo.ico" type="imagex/png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="../../index.html">Kitsune Haven</a>
+                <span class="subtitle">キツネヘブン</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../../All_mangas.html">Obras</a></li>
+                <li><a href="../../About us.html">Sobre Nós</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Pesquisar...">
+                <button type="submit" class="search-button" id="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#458cf4;">
+                        <g fill="#458cf4" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(10.66667,10.66667)">
+                                <path d="M10,2c-4.40347,0 -8,3.59653 -8,8c0,4.40347 3.59653,8 8,8c1.75213,0 3.37052,-0.57793 4.69141,-1.54102l5.1543,5.1543c0.31352,0.32654 0.77908,0.45808 1.21713,0.34388c0.43805,-0.1142 0.78014,-0.45628 0.89433,-0.89433c0.1142,-0.43805 -0.01734,-0.90361 -0.34388,-1.21713l-5.1543,-5.1543c0.96309,-1.32088 1.54102,-2.93928 1.54102,-4.69141c0,-4.40347 -3.59653,-8 -8,-8zM10,4.5c3.05237,0 5.5,2.44763 5.5,5.5c0,3.05237 -2.44763,5.5 -5.5,5.5c-3.05237,0 -5.5,-2.44763 -5.5,-5.5c0,-3.05237 2.44763,-5.5 5.5,-5.5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            <h1>|</h1>
+            <div class="nav_sign_in">
+                <a href="../../Login.html">Entrar</a>
+            </div>
+            <div class="nav_sign_up">
+                <a href="../../Register.html">Cadastra-se</a>
+            </div>
+        </div>
+    </nav>
+    <div class="imagen-main">
+        <div class="color-background-second"></div>
+        <div class="color-background-first"></div>
+        <div class="container-projeto">
+            <h3>Unholy Blood</h3>
+            <span class="alt-title">Título alternativo: White Blood</span>
+            <div class="info">
+                <span>2020 - 2022 | Manhwa | Status: Concluído</span>
+            </div>
+            <hr>
+            <div class="contentprojeto">
+                <div class="portrait">
+                    <img src="../../img/mangas/Unholy-Blood.jpg" alt="Unholy Blood Cover">
+                </div>
+                <div class="position-content">
+                    <h4>Autor: Lina Im</h4>
+                    <p>Quando vampiros destroem sua chance de ter a vida normal que sempre quis, Hayan é forçada a recorrer ao seu segredo mais obscuro para livrar o mundo dos caçadores implacáveis ​​que o tomaram há 10 anos. Com o apoio de uma estrela em ascensão na polícia local, Hayan se levanta para proteger seus entes queridos, enfrentar seu passado e se vingar.</p>
+                    <div class="tags">
+                        <a href="../../All_mangas.html?tag=Ação" class="tag"><span>Ação</span></a>
+                        <a href="../../All_mangas.html?tag=colorido" class="tag"><span>Colorido</span></a>
+                        <a href="../../All_mangas.html?tag=drama" class="tag"><span>Drama</span></a>
+                        <a href="../../All_mangas.html?tag=Fantasia" class="tag"><span>Fantasia</span></a>
+                        <a href="../../All_mangas.html?tag=romance" class="tag"><span>romance</span></a>
+                        <a href="../../All_mangas.html?tag=Sobrenatural" class="tag"><span>Sobrenatural</span></a>
+                        <a href="../../All_mangas.html?tag=webtoons" class="tag"><span>Webtoons</span></a>
+                    </div>
+                    <div class="objects-elements">
+                        <div class="rating" id="text" data-tooltip="4.288 de 5 de 3.440 votos">
+                            <img src="../../svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="../../svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="../../svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <img src="../../svg/elements/star-svgrepo-com.svg" alt="estrela" class="star">
+                            <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" class="star" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="third">
+                                        <rect x="0" y="0" width="6" height="24" fill="#c7cfcc"/>
+                                    </mask>
+                                </defs>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#EBEDE9"/>
+                                <path d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z" fill="#de9e41" mask="url(#third)"/>
+                            </svg>
+                        </div><!--Estrelas-->
+                        <div class="avise" data-tooltip="Abuso doméstico, Temas maduros e Violência">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" id="elements" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C7.28595 2 4.92893 2 3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2ZM12 6.25C12.4142 6.25 12.75 6.58579 12.75 7V13C12.75 13.4142 12.4142 13.75 12 13.75C11.5858 13.75 11.25 13.4142 11.25 13V7C11.25 6.58579 11.5858 6.25 12 6.25ZM12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="#10141F"/>
+                            </svg>
+                        </div><!--Aviso-->
+                        <div>
+                            <img src="../../svg/elements/heart-svgrepo-com.svg" alt="" id="elements">
+                        </div><!--Curtida-->
+                        <div>
+                            <img src="../../svg/elements/bookmark-circle-svgrepo-com.svg" alt="" id="elements">
+                        </div><!--Marcador-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="object-position">
+        <div class="object">
+            <h3>Capítulos</h3>
+            <div class="svg-UI">
+                <img src="../../svg/elements/double-alt-arrow-down-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <main class="chapter-position">
+        <div id="chapters-container" class="all_chapter_wrapper">
+            <div class="search-wrapper">
+                <div class="search-chapter">
+                    <input type="text" id="search-chapter-input" placeholder="Procurar Capítulo...">
+                    <button type="submit" class="search-chapter-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"style="fill:#090A14;">
+                            <g fill="#090A14" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <g transform="scale(10.66667,10.66667)">
+                                    <path d="M10,2c-4.40347,0 -8,3.59653 -8,8c0,4.40347 3.59653,8 8,8c1.75213,0 3.37052,-0.57793 4.69141,-1.54102l5.1543,5.1543c0.31352,0.32654 0.77908,0.45808 1.21713,0.34388c0.43805,-0.1142 0.78014,-0.45628 0.89433,-0.89433c0.1142,-0.43805 -0.01734,-0.90361 -0.34388,-1.21713l-5.1543,-5.1543c0.96309,-1.32088 1.54102,-2.93928 1.54102,-4.69141c0,-4.40347 -3.59653,-8 -8,-8zM10,4.5c3.05237,0 5.5,2.44763 5.5,5.5c0,3.05237 -2.44763,5.5 -5.5,5.5c-3.05237,0 -5.5,-2.44763 -5.5,-5.5c0,-3.05237 2.44763,-5.5 5.5,-5.5z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-sort-wrapper">
+                    <div class="chapter-class" onclick="toggleSortOrder()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="exchange-alt">
+                            <path fill="#090A14" d="M21.71,9.29l-4-4a1,1,0,0,0-1.42,1.42L18.59,9H7a1,1,0,0,0,0,2H21a1,1,0,0,0,.92-.62A1,1,0,0,0,21.71,9.29ZM17,13H3a1,1,0,0,0-.92.62,1,1,0,0,0,.21,1.09l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L5.41,15H17a1,1,0,0,0,0-2Z">
+                            </path>
+                        </svg>
+                    </div> 
+                </div>
+            </div>
+            <div class="all_chapter" id="chapter-list">
+                <div class="chapter-item" data-chapter="1">
+                    <a href="#">Capítulo 1</a>
+                </div><!--Capítulo 1-->
+                <div class="chapter-item" data-chapter="2">
+                    <a href="#">Capítulo 2</a>
+                </div><!--Capítulo 2-->
+                <div class="chapter-item" data-chapter="3">
+                    <a href="#">Capítulo 3</a>
+                </div><!--Capítulo 3-->
+                <div class="chapter-item" data-chapter="4">
+                    <a href="#">Capítulo 4</a>
+                </div><!--Capítulo 4-->
+                <div class="chapter-item" data-chapter="5">
+                    <a href="#">Capítulo 5</a>
+                </div><!--Capítulo 5-->
+                <div class="chapter-item" data-chapter="6">
+                    <a href="#">Capítulo 6</a>
+                </div><!--Capítulo 6-->
+                <div class="chapter-item" data-chapter="7">
+                    <a href="#">Capítulo 7</a>
+                </div><!--Capítulo 7-->
+                <div class="chapter-item" data-chapter="8">
+                    <a href="#">Capítulo 8</a>
+                </div><!--Capítulo 8-->
+                <div class="chapter-item" data-chapter="9">
+                    <a href="#">Capítulo 9</a>
+                </div><!--Capítulo 9-->
+                <div class="chapter-item" data-chapter="10">
+                    <a href="#">Capítulo 10</a>
+                </div><!--Capítulo 10-->
+                <div class="chapter-item" data-chapter="11">
+                    <a href="#">Capítulo 11</a>
+                </div><!--Capítulo 11-->
+                <div class="chapter-item" data-chapter="12">
+                    <a href="#">Capítulo 12</a>
+                </div><!--Capítulo 12-->
+                <div class="chapter-item" data-chapter="13">
+                    <a href="#">Capítulo 13</a>
+                </div><!--Capítulo 13-->
+                <div class="chapter-item" data-chapter="14">
+                    <a href="#">Capítulo 14</a>
+                </div><!--Capítulo 14-->
+                <div class="chapter-item" data-chapter="15">
+                    <a href="#">Capítulo 15</a>
+                </div><!--Capítulo 15-->
+                <div class="chapter-item" data-chapter="16">
+                    <a href="#">Capítulo 16</a>
+                </div><!--Capítulo 16-->
+                <div class="chapter-item" data-chapter="17">
+                    <a href="#">Capítulo 17</a>
+                </div><!--Capítulo 17-->
+                <div class="chapter-item" data-chapter="18">
+                    <a href="#">Capítulo 18</a>
+                </div><!--Capítulo 18-->
+                <div class="chapter-item" data-chapter="19">
+                    <a href="#">Capítulo 19</a>
+                </div><!--Capítulo 19-->
+                <div class="chapter-item" data-chapter="20">
+                    <a href="#">Capítulo 20</a>
+                </div><!--Capítulo 20-->
+                <div class="chapter-item hidden-chapter" data-chapter="21">
+                    <a href="#">Capítulo 21</a>
+                </div><!--Capítulo 21-->
+                <div class="chapter-item hidden-chapter" data-chapter="22">
+                    <a href="#">Capítulo 22</a>
+                </div><!--Capítulo 22-->
+                <div class="chapter-item hidden-chapter" data-chapter="23">
+                    <a href="#">Capítulo 23</a>
+                </div><!--Capítulo 23-->
+                <div class="chapter-item hidden-chapter" data-chapter="24">
+                    <a href="#">Capítulo 24</a>
+                </div><!--Capítulo 24-->
+                <div class="chapter-item hidden-chapter" data-chapter="25">
+                    <a href="#">Capítulo 25</a>
+                </div><!--Capítulo 25-->
+                <div class="chapter-item hidden-chapter" data-chapter="26">
+                    <a href="#">Capítulo 26</a>
+                </div><!--Capítulo 26-->
+                <div class="chapter-item hidden-chapter" data-chapter="27">
+                    <a href="#">Capítulo 27</a>
+                </div><!--Capítulo 27-->
+                <div class="chapter-item hidden-chapter" data-chapter="28">
+                    <a href="#">Capítulo 28</a>
+                </div><!--Capítulo 28-->
+                <div class="chapter-item hidden-chapter" data-chapter="29">
+                    <a href="#">Capítulo 29</a>
+                </div><!--Capítulo 29-->
+                <div class="chapter-item hidden-chapter" data-chapter="30">
+                    <a href="#">Capítulo 30</a>
+                </div><!--Capítulo 30-->
+                <div class="chapter-item hidden-chapter" data-chapter="31">
+                    <a href="#">Capítulo 31</a>
+                </div><!--Capítulo 31-->
+                <div class="chapter-item hidden-chapter" data-chapter="32">
+                    <a href="#">Capítulo 32</a>
+                </div><!--Capítulo 32-->
+                <div class="chapter-item hidden-chapter" data-chapter="33">
+                    <a href="#">Capítulo 33</a>
+                </div><!--Capítulo 33-->
+                <div class="chapter-item hidden-chapter" data-chapter="34">
+                    <a href="#">Capítulo 34</a>
+                </div><!--Capítulo 34-->
+                <div class="chapter-item hidden-chapter" data-chapter="35">
+                    <a href="#">Capítulo 35</a>
+                </div><!--Capítulo 35-->
+                <div class="chapter-item hidden-chapter" data-chapter="36">
+                    <a href="#">Capítulo 36</a>
+                </div><!--Capítulo 36-->
+                <div class="chapter-item hidden-chapter" data-chapter="37">
+                    <a href="#">Capítulo 37</a>
+                </div><!--Capítulo 37-->
+                <div class="chapter-item hidden-chapter" data-chapter="38">
+                    <a href="#">Capítulo 38</a>
+                </div><!--Capítulo 38-->
+                <div class="chapter-item hidden-chapter" data-chapter="39">
+                    <a href="#">Capítulo 39</a>
+                </div><!--Capítulo 39-->
+                <div class="chapter-item hidden-chapter" data-chapter="40">
+                    <a href="#">Capítulo 40</a>
+                </div><!--Capítulo 40-->
+                <div class="chapter-item hidden-chapter" data-chapter="41">
+                    <a href="#">Capítulo 41</a>
+                </div><!--Capítulo 41-->
+                <div class="chapter-item hidden-chapter" data-chapter="42">
+                    <a href="#">Capítulo 42</a>
+                </div><!--Capítulo 42-->
+                <div class="chapter-item hidden-chapter" data-chapter="43">
+                    <a href="#">Capítulo 43</a>
+                </div><!--Capítulo 43-->
+                <div class="chapter-item hidden-chapter" data-chapter="44">
+                    <a href="#">Capítulo 44</a>
+                </div><!--Capítulo 44-->
+                <div class="chapter-item hidden-chapter" data-chapter="45">
+                    <a href="#">Capítulo 45</a>
+                </div><!--Capítulo 45-->
+                <div class="chapter-item hidden-chapter" data-chapter="46">
+                    <a href="#">Capítulo 46</a>
+                </div><!--Capítulo 46-->
+                <div class="chapter-item hidden-chapter" data-chapter="47">
+                    <a href="#">Capítulo 47</a>
+                </div><!--Capítulo 47-->
+                <div class="chapter-item hidden-chapter" data-chapter="48">
+                    <a href="#">Capítulo 48</a>
+                </div><!--Capítulo 48-->
+                <div class="chapter-item hidden-chapter" data-chapter="49">
+                    <a href="#">Capítulo 49</a>
+                </div><!--Capítulo 49-->
+                <div class="chapter-item hidden-chapter" data-chapter="50">
+                    <a href="#">Capítulo 50</a>
+                </div><!--Capítulo 50-->
+                <div class="chapter-item hidden-chapter" data-chapter="51">
+                    <a href="#">Capítulo 51</a>
+                </div><!--Capítulo 51-->
+                <div class="chapter-item hidden-chapter" data-chapter="52">
+                    <a href="#">Capítulo 52</a>
+                </div><!--Capítulo 52-->
+                <div class="chapter-item hidden-chapter" data-chapter="53">
+                    <a href="#">Capítulo 53</a>
+                </div><!--Capítulo 53-->
+                <div class="chapter-item hidden-chapter" data-chapter="54">
+                    <a href="#">Capítulo 54</a>
+                </div><!--Capítulo 54-->
+                <div class="chapter-item hidden-chapter" data-chapter="55">
+                    <a href="#">Capítulo 55</a>
+                </div><!--Capítulo 55-->
+                <div class="chapter-item hidden-chapter" data-chapter="56">
+                    <a href="#">Capítulo 56</a>
+                </div><!--Capítulo 56-->
+                <div class="chapter-item hidden-chapter" data-chapter="57">
+                    <a href="#">Capítulo 57</a>
+                </div><!--Capítulo 57-->
+                <div class="chapter-item hidden-chapter" data-chapter="58">
+                    <a href="#">Capítulo 58</a>
+                </div><!--Capítulo 58-->
+                <div class="chapter-item hidden-chapter" data-chapter="59">
+                    <a href="#">Capítulo 59</a>
+                </div><!--Capítulo 59-->
+                <div class="chapter-item hidden-chapter" data-chapter="60">
+                    <a href="#">Capítulo 60</a>
+                </div><!--Capítulo 60-->
+                <div class="chapter-item hidden-chapter" data-chapter="61">
+                    <a href="#">Capítulo 61</a>
+                </div><!--Capítulo 61-->
+                <div class="chapter-item hidden-chapter" data-chapter="62">
+                    <a href="#">Capítulo 62</a>
+                </div><!--Capítulo 62-->
+                <div class="chapter-item hidden-chapter" data-chapter="63">
+                    <a href="#">Capítulo 63</a>
+                </div><!--Capítulo 63-->
+                <div class="chapter-item hidden-chapter" data-chapter="64">
+                    <a href="#">Capítulo 64</a>
+                </div><!--Capítulo 64-->
+                <div class="chapter-item hidden-chapter" data-chapter="65">
+                    <a href="#">Capítulo 65</a>
+                </div><!--Capítulo 65-->
+                <div class="chapter-item hidden-chapter" data-chapter="66">
+                    <a href="#">Capítulo 66</a>
+                </div><!--Capítulo 66-->
+                <div class="chapter-item hidden-chapter" data-chapter="67">
+                    <a href="#">Capítulo 67</a>
+                </div><!--Capítulo 67-->
+                <div class="chapter-item hidden-chapter" data-chapter="68">
+                    <a href="#">Capítulo 68</a>
+                </div><!--Capítulo 68-->
+                <div class="chapter-item hidden-chapter" data-chapter="69">
+                    <a href="#">Capítulo 69</a>
+                </div><!--Capítulo 69-->
+                <div class="chapter-item hidden-chapter" data-chapter="70">
+                    <a href="#">Capítulo 70</a>
+                </div><!--Capítulo 70-->
+                <div class="chapter-item hidden-chapter" data-chapter="71">
+                    <a href="#">Capítulo 71</a>
+                </div><!--Capítulo 71-->
+                <div class="chapter-item hidden-chapter" data-chapter="72">
+                    <a href="#">Capítulo 72</a>
+                </div><!--Capítulo 72-->
+                <div class="chapter-item hidden-chapter" data-chapter="73">
+                    <a href="#">Capítulo 73</a>
+                </div><!--Capítulo 73-->
+                <div class="chapter-item hidden-chapter" data-chapter="74">
+                    <a href="#">Capítulo 74</a>
+                </div><!--Capítulo 74-->
+                <div class="chapter-item hidden-chapter" data-chapter="75">
+                    <a href="#">Capítulo 75</a>
+                </div><!--Capítulo 75-->
+                <div class="chapter-item hidden-chapter" data-chapter="76">
+                    <a href="#">Capítulo 76</a>
+                </div><!--Capítulo 76-->
+                <div class="chapter-item hidden-chapter" data-chapter="77">
+                    <a href="#">Capítulo 77</a>
+                </div><!--Capítulo 77-->
+                <div class="chapter-item hidden-chapter" data-chapter="78">
+                    <a href="#">Capítulo 78</a>
+                </div><!--Capítulo 78-->
+                <div class="chapter-item hidden-chapter" data-chapter="79">
+                    <a href="#">Capítulo 79</a>
+                </div><!--Capítulo 79-->
+                <div class="chapter-item hidden-chapter" data-chapter="80">
+                    <a href="#">Capítulo 80</a>
+                </div><!--Capítulo 80-->
+                <div class="chapter-item hidden-chapter" data-chapter="81">
+                    <a href="#">Capítulo 81</a>
+                </div><!--Capítulo 81-->
+                <div class="chapter-item hidden-chapter" data-chapter="82">
+                    <a href="#">Capítulo 82</a>
+                </div><!--Capítulo 82-->
+                <div class="chapter-item hidden-chapter" data-chapter="83">
+                    <a href="#">Capítulo 83</a>
+                </div><!--Capítulo 83-->
+                <div class="chapter-item hidden-chapter" data-chapter="84">
+                    <a href="#">Capítulo 84</a>
+                </div><!--Capítulo 84-->
+                <div class="chapter-item hidden-chapter" data-chapter="85">
+                    <a href="#">Capítulo 85</a>
+                </div><!--Capítulo 85-->
+                <div class="chapter-item hidden-chapter" data-chapter="86">
+                    <a href="#">Capítulo 86</a>
+                </div><!--Capítulo 86-->
+                <div class="chapter-item hidden-chapter" data-chapter="87">
+                    <a href="#">Capítulo 87</a>
+                </div><!--Capítulo 87-->
+                <div class="chapter-item hidden-chapter" data-chapter="88">
+                    <a href="#">Capítulo 88</a>
+                </div><!--Capítulo 88-->
+                <div class="chapter-item hidden-chapter" data-chapter="89">
+                    <a href="#">Capítulo 89</a>
+                </div><!--Capítulo 89-->
+                <div class="chapter-item hidden-chapter" data-chapter="90">
+                    <a href="#">Capítulo 90</a>
+                </div><!--Capítulo 90-->
+                <div class="chapter-item hidden-chapter" data-chapter="91">
+                    <a href="#">Capítulo 91</a>
+                </div><!--Capítulo 91-->
+                <div class="chapter-item hidden-chapter" data-chapter="92">
+                    <a href="#">Capítulo 92</a>
+                </div><!--Capítulo 92-->
+            </div>
+            <div class="more-button">
+                <button onclick="changeReadMore()" id="show-more-button">Mostrar mais</button>
+                <div class="svg-UI-2">
+                    <img src="../../svg/elements/double-alt-arrow-down-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>  
+    <div class="like-position">
+        <hr>
+        <h3>Talvez você também goste</h3>
+        <div class="obras-likes-position">
+            <div class="obras-likes">
+                <div class="comic__type">Manhwa</div>
+                <div class="status" id="completed" title="Concluído"></div>
+                <a href="../Sweet Home/Obra.html">
+                    <img src="../../img/mangas/Sweet-Home.jpg" alt="Sweet Home">
+                </a>
+                <h2 class="comic__title">Sweet Home</h2>
+            </div><!--Sweet Home-->
+            <div class="obras-likes">
+                <div class="comic__type">Mangá</div>
+                <div class="status" id="completed" title="Concluído"></div>
+                <a href="../Tokyo Ghoul/Obra.html">
+                    <img src="../../img/mangas/Tokyo-Ghoul.jpg" alt="Tokyo Ghoul">
+                </a>
+                <h2 class="comic__title">Tokyo Ghoul</h2>
+            </div><!--Tokyo Ghoul-->
+            <div class="obras-likes">
+                <div class="comic__type">Mangá</div>
+                <div class="status" id="completed" title="Concluído"></div>
+                <a href="../Hellsing/Obra.html">
+                    <img src="../../img/mangas/Hellsing.jpg" alt="Hellsing">
+                </a>
+                <h2 class="comic__title">Hellsing</h2>
+            </div><!--Hellsing-->
+            <div class="obras-likes">
+                <div class="comic__type">Mangá</div>
+                <div class="status" id="completed" title="Concluído"></div>
+                <a href="../Elfen Lied/Obra.html">
+                    <img src="../../img/mangas/Elfen-Lied.jpg" alt="Elfen Lied">
+                </a>
+                <h2 class="comic__title">Elfen Lied</h2>
+            </div><!--Elfen Lied-->
+            <div class="obras-likes">
+                <div class="comic__type">Mangá</div>
+                <div class="status" id="in_progress" title="Em Andamento"></div>
+                <a href="../Chainsaw Man/Obra.html">
+                    <img src="../../img/mangas/Chainsaw-Man.jpg" alt="Chainsaw Man">
+                </a>
+                <h2 class="comic__title">Chainsaw Man</h2>
+            </div><!--Chainsaw Man-->
+            <div class="obras-likes">
+                <div class="comic__type">Mangá</div>
+                <div class="status" id="completed" title="Concluído"></div>
+                <a href="../Dorohedoro/Obra.html">
+                    <img src="../../img/mangas/Dorohedoro.jpg" alt="Dorohedoro">
+                </a>
+                <h2 class="comic__title">Dorohedoro</h2>
+            </div><!--Dorohedoro-->
+        </div>
+    </div>
+    <footer class="footer-style">
+        <section>
+            <div class="imagen-text-position">
+                <a href="../../index.html" id="imagen-text">
+                    <img src="../../svg/Icon_2.svg" alt="Logo" style="width: 580px; height: 280px;">
+                </a>
+                <div class="social-network">
+                    <a href="https://www.instagram.com/kitsune_haven/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../svg/social/instagram.svg" alt="Instagram" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../svg/social/youtube.svg" alt="Youtube" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                        <img src="../../svg/social/facebook.svg" alt="Facebook" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+                        <img src="../../svg/social/twitter.svg" alt="Twitter/X" style="width: 60px; height: 60px;">
+                    </a>
+                    <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../../svg/social/discord.svg" alt="Discord" style="width: 60px; height: 60px;">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="style-text">
+                <p>
+                    Direitos autorais e marcas para mangás, e outros materiais promocionais são mantidos por seus respectivos proprietários e a sua utilização é permitida nos termos da cláusula de uso justo da Lei de Direitos Autorais Americana. (Copyrights and trademarks for the manga, and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the U.S. Copyright Law.)
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../search.js"></script> 
+</body>
+</html>
